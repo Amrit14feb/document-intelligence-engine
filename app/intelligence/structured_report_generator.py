@@ -10,6 +10,34 @@ STRUCTURED_REPORT_QUERY = (
 )
 
 
+def _extract_json(text):
+    """Parse JSON from an LLM response, tolerating markdown code fences.
+
+    Chat models often wrap JSON in ```json ... ``` fences or add stray prose.
+    This strips fences and, as a last resort, slices from the first ``{`` to the
+    last ``}`` before parsing, so the structured report path is robust to those
+    formatting quirks.
+    """
+
+    cleaned = text.strip()
+
+    if cleaned.startswith("```"):
+        # Drop the opening fence line (``` or ```json) and any closing fence.
+        cleaned = cleaned.split("\n", 1)[-1]
+        if cleaned.rstrip().endswith("```"):
+            cleaned = cleaned.rstrip()[:-3]
+        cleaned = cleaned.strip()
+
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError:
+        start = cleaned.find("{")
+        end = cleaned.rfind("}")
+        if start != -1 and end != -1 and end > start:
+            return json.loads(cleaned[start:end + 1])
+        raise
+
+
 def generate_structured_report():
 
     results = search_chunks(
@@ -90,9 +118,7 @@ DOCUMENT:
 
     response = llm.invoke(prompt)
 
-    return json.loads(
-        response.content
-    )
+    return _extract_json(response.content)
 
 
 def generate_structured_report_with_evidence():

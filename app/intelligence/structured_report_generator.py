@@ -5,10 +5,43 @@ from app.reasoning.llm import llm
 import json
 
 
+STRUCTURED_REPORT_QUERY = (
+    "document overview architecture technologies methodology contributions"
+)
+
+
+def _extract_json(text):
+    """Parse JSON from an LLM response, tolerating markdown code fences.
+
+    Chat models often wrap JSON in ```json ... ``` fences or add stray prose.
+    This strips fences and, as a last resort, slices from the first ``{`` to the
+    last ``}`` before parsing, so the structured report path is robust to those
+    formatting quirks.
+    """
+
+    cleaned = text.strip()
+
+    if cleaned.startswith("```"):
+        # Drop the opening fence line (``` or ```json) and any closing fence.
+        cleaned = cleaned.split("\n", 1)[-1]
+        if cleaned.rstrip().endswith("```"):
+            cleaned = cleaned.rstrip()[:-3]
+        cleaned = cleaned.strip()
+
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError:
+        start = cleaned.find("{")
+        end = cleaned.rfind("}")
+        if start != -1 and end != -1 and end > start:
+            return json.loads(cleaned[start:end + 1])
+        raise
+
+
 def generate_structured_report():
 
     results = search_chunks(
-        "document overview architecture technologies methodology contributions",
+        STRUCTURED_REPORT_QUERY,
         n_results=20
     )
 
@@ -85,6 +118,26 @@ DOCUMENT:
 
     response = llm.invoke(prompt)
 
-    return json.loads(
-        response.content
+    return _extract_json(response.content)
+
+
+def generate_structured_report_with_evidence():
+    """Generate the structured report and add a grounding section.
+
+    Additive companion to :func:`generate_structured_report`. Appends a
+    "Sources & Confidence" section (citations + confidence) so the JSON report
+    stays traceable to the document, without changing the base schema.
+    """
+
+    from app.intelligence.evidence import gather_evidence
+
+    report = generate_structured_report()
+    evidence = gather_evidence(STRUCTURED_REPORT_QUERY)
+
+    report.setdefault("sections", []).append(
+        {
+            "heading": "Sources & Confidence",
+            "content": evidence.appendix(),
+        }
     )
+    return report

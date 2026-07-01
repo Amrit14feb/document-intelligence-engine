@@ -593,6 +593,12 @@ before being sent to the LLM.
 | Graph Retrieval         | ✅      |
 | Graph Expansion         | ✅      |
 | Hybrid Ranking          | ✅      |
+| Hybrid Fusion Scorer    | ✅      |
+| Entity Resolution       | ✅      |
+| Graph Traversal (BFS)   | ✅      |
+| Citation Generation     | ✅      |
+| Confidence Scoring      | ✅      |
+| Multi-document Graph    | ✅ (foundation) |
 | Context Builder         | ✅      |
 | GPT Integration         | ✅      |
 | Executive Summary       | ✅      |

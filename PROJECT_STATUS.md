@@ -138,15 +138,40 @@ Tasks
 
 ## Milestone 1
 
-Improve Retrieval Quality
+Improve Retrieval Quality + Hybrid Ranking
 
 Status
 
-IN PROGRESS
+DONE (v1.5)
 
 Expected Impact
 
 High
+
+Delivered
+
+* `app/retrieval/hybrid_scorer.py` — semantic + entity-coverage + keyword fusion,
+  plus Reciprocal Rank Fusion (replaces lexical-only reranking).
+* `search_chunks_with_scores()` exposes vector-store similarity to the ranker.
+* Tests: `tests/test_hybrid_scorer.py`.
+
+---
+
+## Milestone 1b
+
+Entity Resolution + Graph Traversal
+
+Status
+
+DONE (v1.5)
+
+Delivered
+
+* `app/knowledge_extraction/entity_resolver.py` — alias / exact / token-subset /
+  fuzzy resolution and near-duplicate merging.
+* `app/retrieval/graph_traversal.py` — BFS with hop-distance weighting and
+  shortest-path discovery.
+* Tests: `tests/test_entity_resolver.py`, `tests/test_graph_traversal.py`.
 
 ---
 
@@ -156,11 +181,17 @@ Citation Engine
 
 Status
 
-NOT STARTED
+DONE (v2.0)
 
 Expected Impact
 
 Very High
+
+Delivered
+
+* `app/intelligence/citation_generator.py` — maps retrieved chunks back to
+  `chunk_id` / `page_number` and renders a Sources block. Wired into `rag_engine`.
+* Tests: `tests/test_citation_generator.py`.
 
 ---
 
@@ -170,7 +201,13 @@ Confidence Scoring
 
 Status
 
-NOT STARTED
+DONE (v2.0)
+
+Delivered
+
+* `app/intelligence/confidence_scorer.py` — confidence % from fused-score
+  strength, agreement, entity coverage, and evidence volume. Wired into `rag_engine`.
+* Tests: `tests/test_confidence_scorer.py`.
 
 ---
 
@@ -180,7 +217,13 @@ Multi-document GraphRAG
 
 Status
 
-NOT STARTED
+FOUNDATION DONE (v3.0)
+
+Delivered
+
+* `app/retrieval/multi_document_graph.py` — merges per-document graphs into a
+  provenance-aware global graph with cross-document entity unification.
+* Tests: `tests/test_multi_document_graph.py`.
 
 ---
 
@@ -332,11 +375,32 @@ PDF / DOCX Export
 
 # Immediate Priorities
 
-1. Improve Hybrid Retrieval
-2. Improve Graph Traversal
-3. Implement Citation Generation
-4. Improve Report Quality
-5. Improve Summary Quality
+1. ~~Improve Hybrid Retrieval~~ ✅ `hybrid_scorer`
+2. ~~Improve Graph Traversal~~ ✅ `graph_traversal`
+3. ~~Implement Citation Generation~~ ✅ `citation_generator`
+4. ~~Confidence Scoring~~ ✅ `confidence_scorer`
+5. ~~Multi-document GraphRAG (foundation)~~ ✅ `multi_document_graph`
+6. Improve Report Quality
+7. Improve Summary Quality
+8. ~~Fold citations/confidence into the report & summary generators~~ ✅ `evidence`
+9. ~~Wire `graph_traversal` into `rag_engine` expansion~~ ✅ (+ entity resolution)
+
+---
+
+# Grounding (citations + confidence)
+
+`app/intelligence/evidence.py` unifies citations + confidence into one reusable
+step and is folded into every generator via additive companions (base functions
+unchanged):
+
+* `generate_summary_with_evidence()` — appends a confidence + Sources appendix.
+* `generate_technical_report_with_evidence()` — same, reusing the report query.
+* `generate_structured_report_with_evidence()` — adds a "Sources & Confidence"
+  section to the JSON report.
+
+`rag_engine` now resolves detected entities to canonical form (`entity_resolver`)
+and expands them with distance-weighted BFS (`graph_traversal`) before retrieval.
+Tests: `tests/test_evidence.py`.
 
 ---
 

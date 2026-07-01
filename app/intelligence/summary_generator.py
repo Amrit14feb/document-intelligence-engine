@@ -26,3 +26,16 @@ SUMMARY:
     response = llm.invoke(prompt)
 
     return response.content
+
+
+def generate_summary_with_evidence(context, query="executive summary objective technologies organizations contributions"):
+    """Generate an executive summary and append citations + confidence.
+
+    Additive companion to :func:`generate_summary`; the original is unchanged.
+    ``query`` is used only to gather the supporting evidence appendix.
+    """
+
+    from app.intelligence.evidence import attach_evidence
+
+    summary = generate_summary(context)
+    return attach_evidence(summary, query)

@@ -8,6 +8,7 @@ __pycache__/
 
 # VS Code
 .vscode/
+.idea/
 
 # API keys
 config.py
@@ -30,3 +31,10 @@ Thumbs.db
 # Local LLM models
 Qwen/
 *.gguf
+.cache/
+
+# Test artifacts
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/

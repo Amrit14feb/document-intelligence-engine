@@ -1,0 +1,957 @@
+[
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "affiliated_with",
+        "target": "UFSC"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "affiliated_with",
+        "target": "SpaceLab"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "conducted_research_at",
+        "target": "UFRGS"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "completed_phd_at",
+        "target": "University of Sussex"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "developed_technology",
+        "target": "Satellite-on-a-Chip"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "developed_technology",
+        "target": "COTS"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "developed",
+        "target": "FloripaSat-1"
+    },
+    {
+        "source": "FloripaSat-1",
+        "relationship": "represents",
+        "target": "new space in Latin America"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "designed_and_developed",
+        "target": "Satellite-on-a-Chip"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "collaborates_with",
+        "target": "SpaceLab"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "targets_design_of",
+        "target": "radiation hardened FPGA devices"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "conducts_research",
+        "target": "VLSI and materials area of the PPGEEL"
+    },
+    {
+        "source": "Brazilian Space Agency",
+        "relationship": "provides_support",
+        "target": "Eduardo Augusto Bezerra"
+    },
+    {
+        "source": "CNPq",
+        "relationship": "provides_support",
+        "target": "Eduardo Augusto Bezerra"
+    },
+    {
+        "source": "INPE",
+        "relationship": "supervises",
+        "target": "Eduardo Augusto Bezerra"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "conducts_research",
+        "target": "on-board computing system for future Brazilian space missions"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "trains",
+        "target": "human resources at the undergraduate, master, doctoral, and post-doctoral levels"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "publishes",
+        "target": "in conferences and scientific journals"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "organizes",
+        "target": "scientific conferences"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "develops",
+        "target": "embedded systems for on-board processing"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "facilitates",
+        "target": "international exchanges of students"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "conducts research in",
+        "target": "integrated circuits"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "targets",
+        "target": "aerospace applications"
+    },
+    {
+        "source": "Brazilian Space Agency",
+        "relationship": "benefits from",
+        "target": "technological independence"
+    },
+    {
+        "source": "Satellite-on-a-Chip",
+        "relationship": "is a component of",
+        "target": "satellite's on-board computer"
+    },
+    {
+        "source": "FPGA",
+        "relationship": "is a component of",
+        "target": "satellite's on-board computer"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "conducts research on",
+        "target": "reliability and processing power improvements"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "is associated with",
+        "target": "SpaceLab"
+    },
+    {
+        "source": "Surrey Space Centre",
+        "relationship": "developed",
+        "target": "basic architecture of a SAToC"
+    },
+    {
+        "source": "Surrey Space Centre",
+        "relationship": "is located in",
+        "target": "England"
+    },
+    {
+        "source": "SAToC",
+        "relationship": "targets",
+        "target": "FPGA device"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "developed",
+        "target": "modules of a satellite"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "conducts research on",
+        "target": "Satellite-on-a-Chip"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "develops",
+        "target": "FPGA devices"
+    },
+    {
+        "source": "Satellite-on-a-Chip",
+        "relationship": "targets",
+        "target": "FPGA devices"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "has experience in",
+        "target": "computer architectures for space applications"
+    },
+    {
+        "source": "MPSoC architecture",
+        "relationship": "is part of",
+        "target": "single chip solution"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "develops",
+        "target": "GOLDS-UFSC"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "develops",
+        "target": "Catarina-A1a"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "develops",
+        "target": "Catarina-A1b"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "develops",
+        "target": "Aldebaran-I"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "develops",
+        "target": "GOMX-5"
+    },
+    {
+        "source": "GOLDS-UFSC",
+        "relationship": "also known as",
+        "target": "FloripaSat-2"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "conducts",
+        "target": "orbit calculations"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "conducts",
+        "target": "radiation studies"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "investigates",
+        "target": "satellite-on-a-chip"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "supervises",
+        "target": "Master Dissertations"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "supervises",
+        "target": "PhD Theses"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "investigates",
+        "target": "radiation-hardened FPGA architecture"
+    },
+    {
+        "source": "European Space Agency",
+        "relationship": "uses",
+        "target": "Spacewire"
+    },
+    {
+        "source": "Nanoxplore",
+        "relationship": "produces",
+        "target": "BRAVE FPGAs"
+    },
+    {
+        "source": "Airbus Defence & Space",
+        "relationship": "is a customer of",
+        "target": "BRAVE FPGAs"
+    },
+    {
+        "source": "ThalesAlenia Space",
+        "relationship": "is a customer of",
+        "target": "BRAVE FPGAs"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "supports",
+        "target": "development of libraries"
+    },
+    {
+        "source": "Brazil",
+        "relationship": "has a fabless company similar to",
+        "target": "NanoXplore"
+    },
+    {
+        "source": "Santa Maria Design House",
+        "relationship": "has projects with",
+        "target": "UFSC"
+    },
+    {
+        "source": "Chipus",
+        "relationship": "has projects with",
+        "target": "UFSC"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "funded by",
+        "target": "European Space Agency"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "developed for",
+        "target": "GOMX-5 Mission"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "facing difficulties to interface",
+        "target": "Spacewire communication module"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "conducts research at",
+        "target": "UFSC"
+    },
+    {
+        "source": "RISC-V based MPSoC",
+        "relationship": "is used in",
+        "target": "satellite’s communications systems"
+    },
+    {
+        "source": "CCSDS module",
+        "relationship": "implemented in",
+        "target": "VHDL"
+    },
+    {
+        "source": "CCSDS module",
+        "relationship": "was conceived for",
+        "target": "Multi-Mission Platform of the Brazilian Space Program"
+    },
+    {
+        "source": "CCSDS module",
+        "relationship": "has been used for",
+        "target": "telecommand (TC)"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "developed",
+        "target": "LoRa"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "head",
+        "target": "Eduardo Augusto Bezerra"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "member of",
+        "target": "Graduate Program in Electrical Engineering (PPGEEL)"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "member of",
+        "target": "Graduate Program in Electronic Systems Engineering (PPGESE)"
+    },
+    {
+        "source": "PPGEEL",
+        "relationship": "designed",
+        "target": "subsystems"
+    },
+    {
+        "source": "PPGESE",
+        "relationship": "designed",
+        "target": "subsystems"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "has",
+        "target": "Space Technology Research Laboratory (SpaceLab)"
+    },
+    {
+        "source": "FloripaSat-1",
+        "relationship": "developed_in",
+        "target": "SpaceLab"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "has_facilities_for",
+        "target": "research_and_development_of_space_systems"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "supports",
+        "target": "ground_segment"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "supports",
+        "target": "space_segment"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "has_infrastructure_includes",
+        "target": "computers"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "has_infrastructure_includes",
+        "target": "software"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "has_infrastructure_includes",
+        "target": "development_kits"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "supports",
+        "target": "other groups in Brazil"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "focuses on",
+        "target": "development of basic libraries for EDA tools"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "develops",
+        "target": "SAToC"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "provides",
+        "target": "infrastructure for Brazilian endured FPGA"
+    },
+    {
+        "source": "BRAVE",
+        "relationship": "employs",
+        "target": "FPGA"
+    },
+    {
+        "source": "VHDL",
+        "relationship": "is implemented according to",
+        "target": "DO-254 recommendations"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "conducts research on",
+        "target": "HDL based components"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "produced",
+        "target": "PhD Thesis"
+    },
+    {
+        "source": "PhD Thesis",
+        "relationship": "utilized methodology",
+        "target": "Universal Verification Methodology (UVM)"
+    },
+    {
+        "source": "PhD Thesis",
+        "relationship": "developed system part",
+        "target": "software in C++"
+    },
+    {
+        "source": "PhD Thesis",
+        "relationship": "developed system part",
+        "target": "hardware in VHDL"
+    },
+    {
+        "source": "hardware in VHDL",
+        "relationship": "targets",
+        "target": "FPGA implementation"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "has_infrastructure",
+        "target": "UFSC"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "received_funding_from",
+        "target": "Brazilian Space Agency"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "received_funding_from",
+        "target": "European Space Agency"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "supports",
+        "target": "other groups"
+    },
+    {
+        "source": "SpaceLab/UFSC",
+        "relationship": "develops",
+        "target": "radiation-hardened FPGA device"
+    },
+    {
+        "source": "SpaceLab/UFSC",
+        "relationship": "develops",
+        "target": "SAToC"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "attracts",
+        "target": "Master and PhD students"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "uses",
+        "target": "LEON3 processor"
+    },
+    {
+        "source": "LEON3 processor",
+        "relationship": "conceived by",
+        "target": "Gaisler"
+    },
+    {
+        "source": "LEON3 processor",
+        "relationship": "targets",
+        "target": "space applications"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "investigates",
+        "target": "LEON3 processor"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "migrates to",
+        "target": "RISC-V"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "conducts research at",
+        "target": "SpaceLab"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "targets",
+        "target": "RTEMS"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "targets",
+        "target": "FreeRTOS"
+    },
+    {
+        "source": "RTEMS",
+        "relationship": "is used in",
+        "target": "INPE"
+    },
+    {
+        "source": "INPE",
+        "relationship": "controls",
+        "target": "tasks execution"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "supervised",
+        "target": "Eduardo Augusto Bezerra"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "developed",
+        "target": "OBDH/OBC modules"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "developed",
+        "target": "MPI hardware framework for many-core based embedded systems"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "includes",
+        "target": "UART"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "includes",
+        "target": "Spacewire adapter"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "includes",
+        "target": "SPI"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "includes",
+        "target": "Flash memory controller"
+    },
+    {
+        "source": "Nanoxplore",
+        "relationship": "produces",
+        "target": "radiation-hardened FPGAs"
+    },
+    {
+        "source": "FloripaSat",
+        "relationship": "developed with",
+        "target": "ESA/ESTEC"
+    },
+    {
+        "source": "FloripaSat",
+        "relationship": "developed with",
+        "target": "Nanoxplore"
+    },
+    {
+        "source": "ESA/ESTEC",
+        "relationship": "located in",
+        "target": "The Netherlands"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "supports",
+        "target": "other groups in Brazil"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "develops",
+        "target": "radiation-tolerant FPGA device"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "involves",
+        "target": "graduate students"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "supervised by",
+        "target": "Eduardo Augusto Bezerra"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "collaborates with",
+        "target": "different microelectronics areas"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "develops",
+        "target": "Satellite-on-a-Chip"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "collaborates_with",
+        "target": "UFSC"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "develops",
+        "target": "FloripaSat-1"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "has_on-going_missions",
+        "target": "five satellite missions"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "has ongoing missions",
+        "target": "five"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "was a member of",
+        "target": "consortium of universities"
+    },
+    {
+        "source": "UnB",
+        "relationship": "led",
+        "target": "SERPENS-I"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "developed",
+        "target": "FloripaSat-1"
+    },
+    {
+        "source": "FloripaSat-1",
+        "relationship": "is used in",
+        "target": "Aldebaran-I"
+    },
+    {
+        "source": "FloripaSat-1",
+        "relationship": "is available as",
+        "target": "open source"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "developed",
+        "target": "SAToC components"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "develops",
+        "target": "SAToC components"
+    },
+    {
+        "source": "FloripaSat-1",
+        "relationship": "has",
+        "target": "TRL 9 hardware and software components"
+    },
+    {
+        "source": "FloripaSat-1",
+        "relationship": "provides",
+        "target": "flight heritage for SAToC components"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "acquires experience in",
+        "target": "radiation tolerance strategies"
+    },
+    {
+        "source": "radiation tolerance strategies",
+        "relationship": "informs",
+        "target": "radiation-hardened FPGA design"
+    },
+    {
+        "source": "Brazil",
+        "relationship": "produces",
+        "target": "space technology"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "conducts research",
+        "target": "embedded satellite modules"
+    },
+    {
+        "source": "PPGEEL students",
+        "relationship": "work under supervision",
+        "target": "Eduardo Augusto Bezerra"
+    },
+    {
+        "source": "UFRGS",
+        "relationship": "has experience in",
+        "target": "space technology"
+    },
+    {
+        "source": "University of Sussex",
+        "relationship": "is located in",
+        "target": "England"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "conducts_research_on",
+        "target": "on-board computer architectures of satellites"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "conducts_research_on",
+        "target": "Cubesats"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "investigates",
+        "target": "space-Earth network of ground stations and satellites"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "partnered_with",
+        "target": "UEL"
+    },
+    {
+        "source": "Brazilian contract",
+        "relationship": "involves",
+        "target": "technology transfer activities"
+    },
+    {
+        "source": "technology transfer activities",
+        "relationship": "target",
+        "target": "Brazil"
+    },
+    {
+        "source": "Catarina Constellation",
+        "relationship": "part_of",
+        "target": "satellite"
+    },
+    {
+        "source": "PC104 style Cubesat FPGA PCB",
+        "relationship": "designed_for",
+        "target": "SAToC modules"
+    },
+    {
+        "source": "attitude determination control system",
+        "relationship": "receives_information_from",
+        "target": "MEMs sensors"
+    },
+    {
+        "source": "MEMs sensors",
+        "relationship": "includes",
+        "target": "gyroscopes"
+    },
+    {
+        "source": "MEMs sensors",
+        "relationship": "includes",
+        "target": "accelerometers"
+    },
+    {
+        "source": "MEMs sensors",
+        "relationship": "includes",
+        "target": "magnetometer"
+    },
+    {
+        "source": "attitude determination control system",
+        "relationship": "activates",
+        "target": "actuators"
+    },
+    {
+        "source": "actuators",
+        "relationship": "includes",
+        "target": "magnetic torquer rods"
+    },
+    {
+        "source": "actuators",
+        "relationship": "includes",
+        "target": "reaction wheels"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "has",
+        "target": "MPSoC system"
+    },
+    {
+        "source": "SpaceLab",
+        "relationship": "implements",
+        "target": "ADCS functionalities"
+    },
+    {
+        "source": "INPE",
+        "relationship": "developed",
+        "target": "CCSDS module"
+    },
+    {
+        "source": "CCSDS module",
+        "relationship": "is for",
+        "target": "INPE's satellites"
+    },
+    {
+        "source": "Brazilian space program",
+        "relationship": "is interested in",
+        "target": "ADCS and CCSDS module"
+    },
+    {
+        "source": "Cubesat mission",
+        "relationship": "provides",
+        "target": "flight heritage for modules"
+    },
+    {
+        "source": "SAToC",
+        "relationship": "certifies",
+        "target": "technology for Brazilian satellite"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "contributed to",
+        "target": "RISC-V processor"
+    },
+    {
+        "source": "RISC-V processor",
+        "relationship": "used in",
+        "target": "hardware description language course at PPGEEL/UFSC"
+    },
+    {
+        "source": "PPGEEL/UFSC",
+        "relationship": "part of",
+        "target": "UFSC"
+    },
+    {
+        "source": "students",
+        "relationship": "implement architectures based on",
+        "target": "RISC-V description"
+    },
+    {
+        "source": "students",
+        "relationship": "perform synthesis targeting",
+        "target": "FPGA technology"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "collaborates with",
+        "target": "other microelectronics colleagues"
+    },
+    {
+        "source": "approach similar to rad-hard FPGA",
+        "relationship": "adopted in",
+        "target": "developing RISC-V based development kits"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "offers",
+        "target": "undergraduate and graduate courses"
+    },
+    {
+        "source": "Eduardo Augusto Bezerra",
+        "relationship": "develops",
+        "target": "RISC-V based development kits"
+    },
+    {
+        "source": "RISC-V based development kits",
+        "relationship": "used for",
+        "target": "teaching activities"
+    },
+    {
+        "source": "students",
+        "relationship": "employed by",
+        "target": "electronics industry"
+    },
+    {
+        "source": "Santa Maria Design House",
+        "relationship": "provides",
+        "target": "zr16s08 microcontroller"
+    },
+    {
+        "source": "government",
+        "relationship": "offers",
+        "target": "tax incentives"
+    },
+    {
+        "source": "research proposals",
+        "relationship": "submitted to",
+        "target": "European/Brazilian joint calls"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "has_department",
+        "target": "Aerospace Engineering"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "located_in",
+        "target": "Florianópolis, SC"
+    },
+    {
+        "source": "LIRMM/CSU",
+        "relationship": "collaborates_with",
+        "target": "UFSC"
+    },
+    {
+        "source": "UNSW",
+        "relationship": "collaborates_with",
+        "target": "UFSC"
+    },
+    {
+        "source": "Morehead",
+        "relationship": "collaborates_with",
+        "target": "UFSC"
+    },
+    {
+        "source": "Kyutech",
+        "relationship": "collaborates_with",
+        "target": "UFSC"
+    },
+    {
+        "source": "Nottingham",
+        "relationship": "collaborates_with",
+        "target": "UFSC"
+    },
+    {
+        "source": "ESTEC",
+        "relationship": "collaborates_with",
+        "target": "UFSC"
+    },
+    {
+        "source": "UFSC",
+        "relationship": "located_in",
+        "target": "Brazil"
+    },
+    {
+        "source": "Florianópolis, SC",
+        "relationship": "hosted",
+        "target": "The Floripa-Sat experience: mission progress and satellite’s development"
+    }
+]

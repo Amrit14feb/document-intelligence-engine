@@ -1,0 +1,27 @@
+{
+    "organizations": [
+        "UFSC",
+        "UFRGS",
+        "University of Sussex",
+        "SpaceLab",
+        "Brazilian Space Agency",
+        "CNPq",
+        "INPE",
+        "European Space Agency"
+    ],
+    "people": [
+        "Eduardo Augusto Bezerra"
+    ],
+    "technologies": [
+        "Satellite-on-a-Chip",
+        "COTS",
+        "FPGA",
+        "VHDL"
+    ],
+    "locations": [
+        "Florianópolis, SC",
+        "Brazil",
+        "England",
+        "Latin America"
+    ]
+}

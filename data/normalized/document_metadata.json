@@ -1,0 +1,26 @@
+{
+    "domain": "space technology",
+    "subdomain": "satellite development",
+    "document_type": "research proposal",
+    "topics": [
+        "embedded electronics",
+        "satellite-on-a-chip",
+        "radiation hardened devices",
+        "microelectronics",
+        "on-board processing"
+    ],
+    "keywords": [
+        "new space",
+        "COTS",
+        "FloripaSat-1",
+        "ESA",
+        "FPGA",
+        "radiation tolerance",
+        "VLSI",
+        "SpaceLab",
+        "Brazilian Space Agency",
+        "AEB",
+        "CNPq",
+        "INPE"
+    ]
+}

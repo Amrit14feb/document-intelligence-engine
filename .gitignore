@@ -1,0 +1,32 @@
+# Virtual Environment
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# VS Code
+.vscode/
+
+# API keys
+config.py
+.env
+
+# Vector database
+data/vectors/
+
+# Generated reports
+*.pdf
+*.docx
+
+# Generated outputs
+outputs/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Local LLM models
+Qwen/
+*.gguf

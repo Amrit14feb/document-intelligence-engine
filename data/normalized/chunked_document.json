@@ -1,0 +1,588 @@
+{
+    "doc_id": "DOC001",
+    "title": "Microsoft Word - projeto_pq_cnpq_bezerra_2022(2).docx",
+    "chunks": [
+        {
+            "chunk_id": "CHUNK_1",
+            "page_number": 1,
+            "text": "4 An endured satellite-on-a-chip for deep space missions Eduardo Augusto Bezerra UFSC, CTC, PPGEEL, SpaceLab, Campus Trindade, Florianópolis, SC Tel: +55 (48) 3721 2359, http://gse.ufsc.br/bezerra/ Comitê Assessor: ME – Microeletrônica Área de Conhecimento: Projeto Abstract The research group under the coordination of the author of the proposal was one of the first in the world to develop activities related to the movement called new space. The activities in the space field by the proponent started in 1993, during the master's degree carried out at UFRGS. At the time the research activities were related to embedded electronics of conventional satellites. In the early 2000s, shortly after completing the PhD at the Space Science Centre at the University of Sussex in England, research and development of electronic systems for use in the space environment began, through the use of COTS (Commercial Off-The-Shelf). The first modules based on COTS were used in the design of the FloripaSat-1 satellite, which was one of the first representatives of new space in Latin America.",
+            "char_count": 1083
+        },
+        {
+            "chunk_id": "CHUNK_2",
+            "page_number": 1,
+            "text": "With a total mass of 965g, the satellite entirely designed and developed at SpaceLab was launched in December 2019, going into operation on the same day of launch, even before the other Brazilian satellite launched on the same rocket, the CBERS-4A with a mass of 1,700 kg. In recent years, activities have been carried out at SpaceLab in order to concentrate the functionalities of the modules of the service platform of a satellite on a single chip (Satellite-on-a-Chip, SAToC), aiming at missions in the context of new space. These activities will continue to be carried out in the coming years, but also considering more reliable components, with radiation tolerance features. Our first demand for radiation hardened devices for a new space project came from a mission funded by the European Space Agency (ESA), aiming not only for greater processing power, but also reconfiguration in orbit, and use in higher orbit missions, as well as the interplanetary ones. Unfortunately, in Brazil we still do not have adequate facilities to manufacture radiation hardened FPGA devices to be used in the implementation of a SAToC.",
+            "char_count": 1123
+        },
+        {
+            "chunk_id": "CHUNK_3",
+            "page_number": 1,
+            "text": "The research and development of national embedded solutions for the space field is a major SpaceLab mission, and one of the goals of this proposal is to collaborate with other researchers in the area of microelectronics at UFSC and partner institutions, targeting the design of radiation hardened FPGA devices. The network of partners will work in a fabless way, and the final design will be fabricated abroad. It is not a goal of this proposal to develop the whole FPGA, but to define the expected requirements of a radiation hardened device for use in space, as well as the radiation protection strategies to be used in the project at the HDL level. It is also intended to establish in the laboratory a culture in the study of protection strategies at the technology level. This study will be carried out by researchers in the VLSI and materials area of the PPGEEL at UFSC. At the application level, the proposal aims to continue the ongoing research at SpaceLab in the area of designing a satellite on a chip (SAToC).",
+            "char_count": 1020
+        },
+        {
+            "chunk_id": "CHUNK_4",
+            "page_number": 1,
+            "text": "Contextualising the focus of the research, the final objective concerns the use of FPGAs as a target device for the synthesis of the components necessary to carry out the activities of on-board processing of the service module of a satellite. Since 2004, the author has received financial and institutional support from institutions such as the Brazilian Space Agency (AEB) and CNPq, under the supervision of INPE, to carry out research aimed at generating solutions for the implementation of the on-board computing system for future Brazilian space missions. Among the main contributions of the research developed in the last 15 years, the following stand out: training of human resources at the undergraduate, master, doctoral, and post-doctoral levels; publications in conferences and scientific journals; organisation of scientific conferences; research and development in the area of embedded systems for on-board processing; international exchanges of students",
+            "char_count": 966
+        },
+        {
+            "chunk_id": "CHUNK_5",
+            "page_number": 2,
+            "text": "5 and researchers; and satellite development. A feature shared by these contributions is the search for reliability improvement, and acceleration of the processing of embedded systems in space applications. These improvements are usually obtained through resource replication, that is, use of additional modules to improve reliability (redundancy), and processing power. However, replicating resources typically results in increased power consumption. In space applications, where energy is a scarce resource, replication aimed at improving reliability and processing power needs to be carefully designed. This compromise between reliability and processing speed is one of the major research challenges to be addressed in this proposal. The main objectives to be achieved include: research of tools, technologies and architectures to enable the design of a satellite on-board computing system on a single chip, considering the requirements of space applications (eg reliability, real-time, processing power, energy efficiency); and system validation at the software and hardware levels (HDL), using hardware/software co-design strategies, according to space field requirements.",
+            "char_count": 1177
+        },
+        {
+            "chunk_id": "CHUNK_6",
+            "page_number": 2,
+            "text": "The case study consists of embedding the components of the service platform of SpaceLab’s satellites on a single chip for future use in ongoing space missions. The components of the service platform in question include the On-Board Data Handling (OBDH), Telemetry and Telecommand (TT&C), and the Electric Power System (EPS), using technologies and design methodologies aiming at greater processing power, reliability improvement, and reduced energy consumption. Thus, another objective of the present project is to continue the research work conducted in recent years, more specifically, with regard to the integration of a satellite's on-board computer system in a single chip solution. In addition to important academic and scientific results, it is interesting to emphasise the importance of this research for the Brazilian microelectronics program, as it will generate not only intellectual property cores (IP cores) for the various components of a satellite's on-board computer, but it will also help starting a new investigation area at UFSC in the field of integrated circuits with national technology targeting aerospace applications.",
+            "char_count": 1142
+        },
+        {
+            "chunk_id": "CHUNK_7",
+            "page_number": 2,
+            "text": "From the space point of view, this research will result in technological independence for future Brazilian space missions. Keywords: Satellite-on-a-chip, FPGA, Reliability, Radiation-hardened",
+            "char_count": 191
+        },
+        {
+            "chunk_id": "CHUNK_8",
+            "page_number": 3,
+            "text": "6 List of symbols, abbreviations and acronyms ACDH Attitude Control and Data Handling ADCS Attitude Determination and Control System AOCS Attitude and Orbit Control System AEB Agência Espacial Brasileira AR Acceptance Review BCH Bose, Chaudhuri and Hocquenghem CCSDS Consultative Committee for Space Data Systems CDR Critical Design Review EDAC Error Detection-and-Correction ESA European Space Agency FPGA Field Programmable Gate Array FRR Flight Readiness Review INPE Instituto Nacional de Pesquisas Espaciais MDR Mission Definition Review MPSoC Multiprocessor System-on-Chip OBC On-Board Computer ORR Operational Readiness Review PDR Preliminary Design Review PRR Preliminary Requirements Review QR Qualification Review RS Reed-Solomon SoC System on a Chip SAToC Satellite on a Chip SRAM Static Random Access Memory SRR System Requirements Review TC Telecommand TM Telemetry VHDL VHSIC Hardware Description Language VHSIC Very High Speed Integrated Circuit",
+            "char_count": 959
+        },
+        {
+            "chunk_id": "CHUNK_9",
+            "page_number": 4,
+            "text": "7 Table of contents 1. Introduction 8 2. Proposed research 11 2.1. Radiation-hardened FPGA device 11 2.2. Satellite-on-a-chip 14 3. Methodology 17 3.1. Reliability improvement 18 3.2. Verification and validation 20 3.3. Project management 20 4. Expected results 22 5. Research activities and production related to the proposal 26 5.1. Scientific Publications 27 5.2. Undergraduate, Master, PhD and Postdoctoral Supervision 28 5.3. Research activity: reconfigurable systems in space applications 29 5.4. Research activity: FPGA based systems for space data communications 30 5.5. Research activity: computer architectures for space applications 31 5.6. Research activity: reliability improvement, fault injection, testing 32 5.7. Research activity: Cubesat missions - FloripaSat and Catarina Constellation 36 5.8. Partners and funding 38 6. List of activities and schedule 39 7. Final remarks, relevance and impact of the project 41 References 44 APPENDIX A - Production summary for moving to CNPq PQ 1D 48",
+            "char_count": 1005
+        },
+        {
+            "chunk_id": "CHUNK_10",
+            "page_number": 5,
+            "text": "8 1. Introduction Technological advances allow on-board systems becoming more and more autonomous, not only for the navigation and attitude control activities of a spacecraft, but also in the pre-processing of data to be transmitted to ground stations. In the big data era, on-board pre-processing is a de facto need in modern satellite platforms [HAN15][OBE15][LIM14][WAL11][PIN10]. The availability of low power high resolution sensors for remote sensing, high data rate instruments, a variety of cameras generating a huge amount of pixels to be compressed, among other data intensive operations, result in the need of multi-processed architectures, similar to the ones used in ground level applications [AGRA08]. However, the reliability and energy requirements in the space environment are stricter, placing the research on this type of parallel processing architecture at the knowledge frontier [BUT15]. Reliability improvement and system processing acceleration features are often achieved through redundancy. The implementation of traditional redundancy strategies usually results in an increase in the energy consumption.",
+            "char_count": 1129
+        },
+        {
+            "chunk_id": "CHUNK_11",
+            "page_number": 5,
+            "text": "In space applications, where energy is a scarce resource, both reliability and processing power improvements must be carefully designed and this compromise is a major research challenge conducted at the SpaceLab, UFSC. The idea of having a whole satellite's functionality implemented in a single chip (satellite- on-a-chip, SAToC) is not new. Considering the small satellites field, Abhay Joshi gave an interview in 1994 describing his plans for a startup company to work on this topic [JOS94]. Also, Vladimirova's group from Surrey Space Centre, England, developed the basic architecture of a SAToC, to implement a CCSDS based communication system, targeting an FPGA device [BAR06][VLA07]. As shown in Figure 1, the group from Surrey has proposed also an ASIC implementation for a SAToC, including all the basic subsystems of a satellite: Telemetry, Tracking & Control (TT&C); Electrical Power System (EPS); Thermal control; On-Board Data Handling (OBDH); Attitude Determination and Control System (ADCS); and Payload [BAR06].",
+            "char_count": 1027
+        },
+        {
+            "chunk_id": "CHUNK_12",
+            "page_number": 5,
+            "text": "While the SAToC in Figure 1 is more \"general\" than the CCSDS based one, it is clear that the former can be used in an actual mission, as the main communication system of a satellite. The SAToC shown in Figure 1 can be seen more as a proof-of-concept, than as a solution for a real space mission. It can be used in an actual space mission, but only if the mission has very specific requirements (e.g. energy requirements, data rates, payload processing capabilities, ...). Considering that, the \"generic\" SAToC shown in Figure 1 becomes a solution for just very specific missions. At UFSC, in the SpaceLab, several modules of a satellite have been developed. There are modules to be used in sub-systems as EPS, OBDH, ADCS, TT&C, Thermal control, and the payloads. The research and development activities related to these modules are conducted by two different groups, at different abstraction levels, and employing quite different technologies. One of the groups works in the design of the subsystems at the Printed Circuit Board (PCB) level, as shown in Figure 2. The other group focus is on the migration of these modules functionalities to a satellite- on-a-chip implemented using FPGAs or ASICs.",
+            "char_count": 1198
+        },
+        {
+            "chunk_id": "CHUNK_13",
+            "page_number": 5,
+            "text": "This is a quite interesting challenge, and the first step was to have a \"satellite-on-a-board\", instead of a \"satellite-on-a-chip\". The target board is based on FPGA technology. The FPGA device holds the digital modules, and the remaining SAToC modules, including analog devices, external memories, among others, are placed on the PCB, around the main FPGA. An important goal of the proposed project is to conduct the research of multiprocessor system-on-chip (MPSoC) architectures, and the development of a single chip solution for on-board systems considering space applications requirements (reliability, real-time operation, processing power, energy consumption efficiency). In space systems, parallel processing",
+            "char_count": 716
+        },
+        {
+            "chunk_id": "CHUNK_14",
+            "page_number": 6,
+            "text": "9 is usually employed for CPU bound applications as, for instance, image processing. However, the new technology used in sensors and actuators, result in advanced attitude control systems, demanding also higher processing power. There are no more than 10 countries in the world possessing the technology to develop an attitude control system. This is a strategic technology, as it can be used not only to control satellites, but also to guide rockets and missiles. For this reason, the International Traffic in Arms Regulations (ITAR), from the United States of America, restricts the commercialization of parts and electronics components to space programs which intend to launch their satellites using rockets from proscribed countries as, for instance, China. Recently, Thales- Alenia had to cancel a contract to launch a satellite in a Chinese rocket, as they employed ITAR protected components in their satellite's design. The result is that Thales-Alenia had to look for a western launcher with a budget similar to the Chinese one. Figure 1. Satellite-on-a-chip ASIC from Surrey Space Centre [BAR06].",
+            "char_count": 1105
+        },
+        {
+            "chunk_id": "CHUNK_15",
+            "page_number": 6,
+            "text": "These ITAR restrictions motivated the on-going research at UFSC in order to develop a single chip solution for space applications, targeting FPGA devices. While some radiation-hardened and military microprocessors, and other electronic components, have their commercialization restricted under the ITAR regulations, \"blank\" FPGAs can be used to implement soft-core versions of such components. The idea is to adapt existent architecture, in order to comply with the requirements of a chosen application. After several years of experience in the research and development of computer architectures for space applications, it has been noticed a trend towards the need for a single chip solution of an on-board computer capable of performing not only attitude control, but also the remaining satellite functionalities, which can be accomplished through a combination of an MPSoC architecture and hardware components (HDL).",
+            "char_count": 918
+        },
+        {
+            "chunk_id": "CHUNK_16",
+            "page_number": 7,
+            "text": "10 The porting of software and hardware components from legacy PCB designs to single chip FPGA based implementations is an interesting engineering defy, but it is not exactly a major challenge. It is indeed a time consuming task, and it requires special skills, technology knowledge, and advanced development tools. The research and development of satellites' hardware/software components to be embedded in a single chip is a major research challenge, as well as the tuning of these components, in order to comply with the strict space standards. Another important research challenge is the software and hardware (HDL) validation process. There are well-defined procedures for the validation of hardware (PCBs and electronic circuits), and also for software (software test strategies). However, the validation of a hardware description language (HDL) based system is a real research challenge, as an HDL design is neither software (does not result in an executable binary code), nor hardware (the resulting netlist placement/routing may change at each synthesis run). In computer architectures for space applications, dependability figures need to be carefully analysed and improved.",
+            "char_count": 1183
+        },
+        {
+            "chunk_id": "CHUNK_17",
+            "page_number": 7,
+            "text": "Another scientific challenge at the architecture level is the reliable migration from a mono-processed (System-on-a-Chip, SoC) to a multi-processed (MPSoC) architecture, aiming for processing capability improvement with no expressive energy consumption increase. This may be a topic already investigated in other fields, but the requirements of critical real-time applications, such as in the aerospace industry, makes this a very challenging research topic. Figure 2. SpaceLab’s flatsat featuring the EPS, TT&C, OBDH, and payloads developed at the lab. Taking into account the aforementioned technological advances, the main objective of this proposal is the research and development of a satellite-on-a-chip architecture for on-board systems considering space applications requirements (reliability, real-time operation, processing power, energy consumption efficiency). Other objectives include:",
+            "char_count": 898
+        },
+        {
+            "chunk_id": "CHUNK_18",
+            "page_number": 8,
+            "text": "11 ● To speed up system performance, through multi-processed architectures, with no major impact in reliability figures and power consumption. ● Reliability improvement, through system validation at several abstraction levels, according to standards from the space industry. ● To contribute with Brazilian microelectronics groups working in the conception of an endured FPGA device in a fabless way. ● Conceive a system ready for in-orbit validation (IoV), which will result in high quality scientific production in the field of microelectronics systems for space applications. In the remainder of this text these objectives and research challenges are further discussed, as well as the proposed architecture and the methodology to be followed. There is a list of activities needed to accomplish the objectives, a discussion on the relevance and scientific impact of the proposal, and also a description of previous research activities related to the proposed project. 2. Proposed research In recent years, the major on-going development activities at SpaceLab are related to the satellites GOLDS-UFSC (a.k.a. FloripaSat-2), Catarina-A1a, Catarina-A1b, Aldebaran-I, and GOMX-5.",
+            "char_count": 1177
+        },
+        {
+            "chunk_id": "CHUNK_19",
+            "page_number": 8,
+            "text": "The team members work in all aspects of these satellites, including software, hardware, boards, mechanical, and thermal aspects. There are also other on-going activities in the lab as, for instance, orbit calculations, radiation studies and other space related issues. These development activities are a direct result of the research activities conducted in the past, and at present. The proposed satellite-on-a-chip research topic has been partially investigated in Master Dissertations and PhD Theses under the supervision of the author of this proposal. It is an ever changing topic that deserves a continuous investigation in the state-of-the-art and the recent findings. In addition, the conception of a radiation-hardened FPGA architecture has also been investigated in the past, as this sort of technology is essential for space missions. The proposed satellite-on-a-chip is composed of several Intellectual Property (IP) cores written in a Hardware Description Language (HDL), and it is endured through design techniques at HDL level, and also when using a radiation-hardened FPGA device.",
+            "char_count": 1096
+        },
+        {
+            "chunk_id": "CHUNK_20",
+            "page_number": 8,
+            "text": "Next there is a description of the proposed research, considering the satellite-on-a-chip on-going work, and also the target radiation-hardened FPGA architecture. 2.1. Radiation-hardened FPGA device The IP cores of the proposed satellite-on-a-chip have been developed targeting several FPGA families, from different vendors. Some of them are just COTS, with no specific radiation protection features. In these cases, fault tolerant mechanisms were defined and implemented [MAR15][MAR18][TRA18][VIL18][VIL19]. These mechanisms are necessary in order for the system to survive in the harsh space environment, when no reliable FPGA devices are available. The resulting effects of radiation on FPGAs are diverse, and those classified as Total Ionising Dose (TID) and Single-Event Effects (SEE) are of great interest to this research. The Ionising radiation is generated in space in three ways: Solar Wind and Solar Cosmic Rays (SCR); Galactic Cosmic Rays (GCR); and Van Allen Belts (The Van Allen Belts). The source of Galactic Cosmic Rays are galaxies and stars, and they are the most intense among the energetic particles, being difficult to protect.",
+            "char_count": 1148
+        },
+        {
+            "chunk_id": "CHUNK_21",
+            "page_number": 8,
+            "text": "SEE are of special interest as they have strong effects on digital circuits. There are several",
+            "char_count": 94
+        },
+        {
+            "chunk_id": "CHUNK_22",
+            "page_number": 9,
+            "text": "12 forms of SEE, including the Single-Event Upset (SEU), the Single-Event Latchup (SEL), and the Single-Event Transient (SET). SEUs represent the main cause of stuck-at faults, when a bit is kept in logic level 0 or logic level 1. This type of fault manifests itself mainly in SRAM-based devices, such as memories and FPGAs. A SEU occurs when a high-energy particle collides with a memory cell, losing energy, and resulting in a densely ionised region. This will force the memory cell to remain in a state, 0 or 1, and consequently, stuck-at faults are the best option to model the errors that occur due to this type of radiation. In the case of SEE, the effects are more immediate, as a result of the flow of energetic particles through the electronic systems. On the other hand, TID presents long-term effects, as a consequence of the long-term exposure of the electronic systems to radiation. The detection and tolerance of these types of faults is one of the goals of this research. Considering these radiation menaces, flash or antifuse FPGAs must be used instead of SRAM-based FPGAs as they are more susceptible to Single-Event Upset (SEU) as well as Electromagnetic Interference (EMI).",
+            "char_count": 1192
+        },
+        {
+            "chunk_id": "CHUNK_23",
+            "page_number": 9,
+            "text": "This fact has particular importance for SEU and EMI as the device’s sensitivity increases with technology and power-supply scaling. Note that technology scaling has increased the device clock frequency and driven down power supply voltage, which consequently renders devices more sensitive to external perturbations. Fault tolerance techniques may be sufficient to protect SRAM-based devices, when considering Low Earth Orbit (LEO) and short time missions, but when considering interplanetary space missions, or even higher orbit missions, in these cases radiation- hardened devices must be employed. These devices are conceived to tolerate not only SEE but also TID, and this higher energy radiation induces changes in the chemical and physical structure of materials, and in living beings they can be lethal. Their interaction has a corpuscular feature. The effects of the passage of electromagnetic radiation through matter results in: heating; luminescence; chemical effects; ionisation; and nuclear excitation. When passing through matter, a beam of electromagnetic radiation loses intensity due to absorption and diffusion.",
+            "char_count": 1129
+        },
+        {
+            "chunk_id": "CHUNK_24",
+            "page_number": 9,
+            "text": "Absorption occurs when a photon is captured, either by an atom or a molecule, causing the system to transition to a higher energy level. Diffusion is simply a ray that has deviated from its trajectory. With all these effects of radioactivity, the circuit is more susceptible to electromagnetic interference caused by other electronics onboard the satellite. This results in large electromagnetic interference both radiated and conducted in adjacent circuits. The circuit over time accumulates ionising radiation, and it is affected in several ways. There is an increase in leakage current, corrosion of the board tracks, and changes in the internal structure of the transistors of the integrated circuits. In space missions, considered as “long term”, hardware and software modules need to be designed considering that post-launch maintenance activities are usually impractical, or have a very high cost. They also need to take into account the fact that the space environment is quite hostile and will certainly cause problems for the system.",
+            "char_count": 1043
+        },
+        {
+            "chunk_id": "CHUNK_25",
+            "page_number": 9,
+            "text": "In traditional microprocessor-based space systems, fault tolerance techniques are used in order to keep vital systems operational, such as those responsible for communicating with ground stations and navigation and attitude determination systems. Computer systems need to “adapt” to new situations, in order to remain operational even in the event of problems. From the hardware point of view, this adaptation occurs by isolating the faulty modules and, if possible, by activating spare modules. At the software level, the adaptation can be identified, basically, when the microprocessor starts executing a new program to replace the defective module. This new program could be stored aboard the satellite, or it could be loaded from a ground station.",
+            "char_count": 751
+        },
+        {
+            "chunk_id": "CHUNK_26",
+            "page_number": 10,
+            "text": "13 Strategies for designing radiation-hardened devices will be investigated, in order to help partners develop a library of components to be used by commercial EDA tools. Thus, it will be possible to design the digital blocks of an FPGA in a hardware description language, using the components provided by the EDA tool. The developer will be able to decide, during development, whether to use conventional components or components designed with radiation tolerance characteristics (special flip-flops, logic gates, ...). The netlist produced by the EDA tool can be used in the physical design and fabrication of a radiation-hardened FPGA. Thus, both the manufacturing process and functional aspects of the components will be considered in the proposed research. The research aims to cooperate with other groups working in the design of radiation- hardened library components, targeting the conception of an ITAR free Brazilian FPGA. An important motivation for this research is the difficulty in acquiring qualified components for space applications in the international market. This difficulty is due not only to the lack of manufacturers, but also due to trade restrictions in this field.",
+            "char_count": 1190
+        },
+        {
+            "chunk_id": "CHUNK_27",
+            "page_number": 10,
+            "text": "The import restrictions of electronic components for space and defence applications have increased, being of strategic importance that the country develops this technology, to avoid greater further consequences to the space program, which would directly impact in several areas, mainly in the monitoring of the natural resources of the Amazon region. A similar approach has been taken by other countries, in order to have their own radiation- hardened FPGA solution. This is the case of France where Nanoxplore, a fabless company developed a family of radiation-hardened FPGAs. The BRAVE family of FPGAs has three members: NG-Medium; NG-Large; and NG-Ultra. They are manufactured by STM, also in France, and they are ITAR free. The SEU tolerance is a combination of several factors: the process technology (C65 Space Process); the circuit design (RHBD Skyrob library); and the device density (Nanoxplore full custom design). All logic of BRAVE FPGAs is hardened by design using, for instance, EDAC in the register files, DICE in the configuration memories and flip-flops, DMR in the clock tree, and TMR in other logic cells (Skyrob library).",
+            "char_count": 1141
+        },
+        {
+            "chunk_id": "CHUNK_28",
+            "page_number": 10,
+            "text": "There are additional integrity checks in the embedded configuration memory. There are interesting design decisions as, for instance, DICE in the memory cells and DFFs. This technique results in more transistors per memory cell, but it is quite suitable for SEU radiation effects as a cell memory can only flip a bit if two channels switch at the same time. So, an energy particle striking a cell cannot flip the bit. The NG-Medium has been designed, verified, manufactured using 65nm CMOS technology from STM, and it has 35k LUTs. The NG-Large has 140k LUTs in 65nm CMOS, and the NG-Ultra has 600k LUTs using 28nm technology. Nanoxplore also provides NanoXmap, which is the synthesis tool for the BRAVE FPGAs. The FPGAs have special features for space applications. For instance, they have embedded Spacewire physical interfaces, as this type of protocol is largely used in European Space Agency missions. The NG-Large and NG-Ultra have hard IP core ARM processors connected to the logic blocks through AXI interfaces. The main Nanoxplore customers for the BRAVE FPGA family are Airbus Defence & Space, and ThalesAlenia Space.",
+            "char_count": 1126
+        },
+        {
+            "chunk_id": "CHUNK_29",
+            "page_number": 10,
+            "text": "The goal of this research topic is not to develop the full component library for producing a radiation-hardened FPGA, but to create a culture in SpaceLab aiming the support to other groups to develop libraries, in order to have a fabless company in Brazil, similar to NanoXplore, producing radiation-hardened FPGAs for the Brazilian Space Program, the defence industry, and also for export. Target groups in Brazil are Santa Maria Design House and Chipus which already have projects with UFSC.",
+            "char_count": 493
+        },
+        {
+            "chunk_id": "CHUNK_30",
+            "page_number": 11,
+            "text": "14 2.2. Satellite-on-a-chip The basic concept behind the satellite-on-a-chip is similar to other technologies as, for instance, the system-on-chip, or the multi-processor system-on-a-chip. In these technologies, self- contained modules (also called as cores, or intellectual property cores - IP cores), are connected together in order to implement a more complete system. The complete system will also need an interconnection infrastructure that must be designed/chosen according to the system requirements. A software platform could be used in order to help the designers put together the system modules, but the research goal is not to develop a new one. The idea is to adapt an existent architecture, in order to comply with the requirements of the chosen application. The basic functionalities in order to have a single chip solution to implement the on-board systems of a satellite include: ● Communications - the satellite must have a way to receive commands from a ground station, and to send back telemetry (service and payload data).",
+            "char_count": 1042
+        },
+        {
+            "chunk_id": "CHUNK_31",
+            "page_number": 11,
+            "text": "● Attitude determination and control - there must be a way for the satellite to take actions regarding its trajectory, which could be under the control of the ground segment, or automatically/semi-automatically. ● Energy management - there must be strategies for the energy harvesting, storage, and distribution to the remaining modules of the system. ● Processing - All the information flow of the satellite must be pre-processed, in order to have a proper management of all modules. Important tasks to be executed by the processing module include housekeeping, and payload management. ● Thermal control - The satellite is exposed to a very harsh environment, and there must be strategies to manage the thermal aspects of the on-board systems. ● Payload - satellites are used mainly to collect, process, and forward data. There are different types of payloads, and typical satellite data include images and audio. However, considering the available technology, a generic solution targeting all these functionalities is not feasible yet.",
+            "char_count": 1037
+        },
+        {
+            "chunk_id": "CHUNK_32",
+            "page_number": 11,
+            "text": "As a result, the proposed architecture will be able to provide all these functionalities but, for each mission, just some of them will be the main ones, according to the mission requirements. For instance, a 5G telecommunications driven mission, is going to be based on such communication modules, and a precision navigation based mission, is going to have ADCS modules. In the previous period of the PQ scholarship, the Attitude Determination and Control System (ADCS) component of the SAToC has not been finished. It was the research topic of a PhD student, who decided to change the subject. However, the new space missions under development at SpaceLab have a high demand for this component. A mission with no strict pointing and positioning requirements may not need to have an active ADCS. This is the case of past SpaceLab missions as, for instance, the FloripaSat-1 satellite, where a passive attitude control system was sufficient to keep the antennas pointing towards the Ground Stations. In the new satellite missions, an active ADCS will be necessary, not only for the new directional antennas, but also for the imaging sensors.",
+            "char_count": 1140
+        },
+        {
+            "chunk_id": "CHUNK_33",
+            "page_number": 11,
+            "text": "The ADCS is the most complex component of the proposed SAToC, and its design received the support from researchers from Ukraine during their visit to UFSC in 2021. Their technology used in the design of an ADCS for rockets has been adapted to be used in the attitude",
+            "char_count": 266
+        },
+        {
+            "chunk_id": "CHUNK_34",
+            "page_number": 12,
+            "text": "15 determination and control system of a small satellite. The complexity associated with the control software, the target microprocessor, the involved sensors and actuators, and the respective interfaces, results in major difficulties to accomplish this module. The ADCS is a continuous work in the research group, and the preliminary results to be obtained in the following years will be published in conferences and scientific journals. In Figure 2 there is a block diagram of the reference system, and some of the components shown in the figure have already been implemented at SpaceLab. Figure 3. An OBC, implementing an ADCS with its sensors and actuators. In order to process the data from all sensors in the proposed ADCS, and to activate all the actuators, the solution was to employ a multi-processed architecture. In a space system, this architecture must have special features, aiming for processing capability improvement with no expressive energy consumption increase. This may be a topic already investigated in other fields, but the requirements of critical real-time applications, such as in the aerospace industry, makes this a very challenging research topic.",
+            "char_count": 1177
+        },
+        {
+            "chunk_id": "CHUNK_35",
+            "page_number": 12,
+            "text": "In the previous scholarship period, two different multi-processed architectures have been implemented using FPGAs as the target platform. One of them is in use in the Advanced Payload Processors (APPs) developed at SpaceLab for the GOMX-5 Mission [BEZ21]. GOMX-5 is a satellite from Gomspace, and in this mission SpaceLab is funded by the European Space Agency. The goal is to employ the FPGA-based payload developed at SpaceLab in the GOMX-5 mission. Two versions of the multi-processed architecture have been implemented, one of them with the RISC-V IP core, and the other one employing a much simpler processor core provided by a company from the UK. The RISC-V version offered more processing power, but UFSC’s team is facing difficulties to interface some of the peripherals as the Spacewire communication module. For this reason, the IP cores provided by the UK company were adopted in the first stable version of APPs. The conception of the multiprocessor system-on-chip (MPSoC) architecture, to serve as a base building block of a high performance on-board computer for use in satellites, is a challenging research topic.",
+            "char_count": 1129
+        },
+        {
+            "chunk_id": "CHUNK_36",
+            "page_number": 12,
+            "text": "At the moment, there are two PhD students at SpaceLab using the RISC-V processor in their respective Theses, targeting an improved version of the proposed multi-processed architecture, to be used in the ADCS.",
+            "char_count": 208
+        },
+        {
+            "chunk_id": "CHUNK_37",
+            "page_number": 13,
+            "text": "16 The FPGA technology has been chosen as it is a good option to cope with ITAR issues, allowing the implementation of systems with the same functionality as restricted components. A drawback is the complexity associated with the development in HDL languages, when compared to the traditional programming languages. In situations where there is no other option, this drawback is leveraged. Another drawback is that depending on the application as, for instance, when considering embedded soft-cores, FPGAs may not deliver the same performance levels as their counterpart physical microprocessors. However, there are studies showing that, on the other hand, FPGAs have better energy consumption levels than CPUs and GPGPUs. In order to improve even more the consumption figures in FPGA based systems, and taking advantage of a soft-processor HDL source code availability, the whole architecture of a SAToC should be made energy aware. RISC-V is a well structured soft-processor, but there is still room for improvements targeting better consumption performance. For example, its pipeline could be reformulated in order to mitigate unnecessary activities.",
+            "char_count": 1153
+        },
+        {
+            "chunk_id": "CHUNK_38",
+            "page_number": 13,
+            "text": "More advanced architectural structures could be added to improve instruction-level control, reducing activities and clock pulses in the system. In order to avoid code compatibility issues, although not recommended, the compiler itself could be modified to generate code more cache optimised, and with a better register usage, always concerned about this type of battery- driven SAToC implementation. When choosing between performance improvement or energy efficiency, there is always a compromise. Simulations should be performed for each application to identify what is more energy efficient: employing an MPSoC architecture aiming the pre-processing to minimise the amount of data to be transmitted to ground stations; or performing a minimal pre- processing, using a more traditional approach, which will result in a large amount of data to be transmitted. The use of several cores (or several processors) is necessary in order to achieve higher system processing acceleration figures. This type of redundancy is also useful to improve the system's reliability.",
+            "char_count": 1064
+        },
+        {
+            "chunk_id": "CHUNK_39",
+            "page_number": 13,
+            "text": "Traditional structural and temporal redundancy implemented, for instance, through TMR, superscalar and pipeline based architectures, result in an increase in the energy consumption. In space applications, where energy is a scarce resource, both reliability and processing power improvements must be carefully designed and this is a major research challenge to be conducted at the SpaceLab/UFSC. The RISC-V based MPSoC is used also in the processing tasks of the satellite’s communications systems. The telecommand and telemetry CCSDS module implemented inVHDL at SpaceLab was conceived, originally, to be used in the Multi-Mission Platform of the Brazilian Space Program. Afterwards, it has been downsized in a PhD Thesis, in order to be used in a small satellite [SAL20][SAL22]. It is a complex system as it implements a full version of a CCSDS recommendation for space data communications, and it has been used for several years, in order to be qualified as the telecommand (TC) and telemetry (TM) system of a satellite. Both, the TC and TM modules, have a coding layer in charge of encoding and decoding data.",
+            "char_count": 1112
+        },
+        {
+            "chunk_id": "CHUNK_40",
+            "page_number": 13,
+            "text": "In space applications, CCSDS recommends Reed-Solomon (RS) for TM encoding and Bose-Chaudhuri-Hocquenghem (BCH) algorithm for TC encoding. The implemented TC/TM module received the denomination UTMC. Another on-going work at the SpaceLab regarding the communications module of the satellite, is the Software Defined Radio (SDR). Important motivations to use software-defined radio in a satellite include the flexibility introduced by this technology, the short development time, and lower costs when compared to more traditional approaches. In [TSO17], the authors describe their library of reusable modules implemented in VHDL. The library can be used by SDR designers, in order to select the most appropriate ones according to their application requirements. In the library there are the following DSP cores: Finite Impulse Response (FIR); Infinite Impulse Response (IIR); Fast Fourier Transform/Inverse Fast Fourier Transform (FFT/IFFT); and Digital Down Converter",
+            "char_count": 966
+        },
+        {
+            "chunk_id": "CHUNK_41",
+            "page_number": 14,
+            "text": "17 (DDC) algorithms. In order to have a complete SDR implementation, there must also be a processor (for the software execution), an interconnection infrastructure to connect the DSP cores and the processor(s), and analog components outside the FPGA (LNA, PGA, AD, DA, ...). The DSP IP cores will be used together with the MPSoC in the implementation of the next generation of communication systems to be employed in the constellation of satellites under development at SpaceLab. In these constellations, new standards will be used such as the 5G in order to address requirements and performance needs of machine-type communications (MTC). There are three services defined in the 5G system concept: Extreme Mobile Broadband (xMBB); Massive MTC (mMTC); and Ultra-reliable MTC (uMTC). All of them could be used in space applications but, for instance, xMBB targets applications with high volume and data rates as, for instance, augmented reality systems. Reliability is an important aspect in space applications, but the uMTC service targets systems such as, for instance, remote surgery.",
+            "char_count": 1086
+        },
+        {
+            "chunk_id": "CHUNK_42",
+            "page_number": 14,
+            "text": "The mMTC service seems a good candidate for a small satellite mission, as it could be used in a massive data collection system. This service aims to define the rules for having massive deployments of low-cost battery-powered sensors and actuators, remote controlled and readable. The 5G will provide connectivity solutions for a huge number of devices, and it could be a good satellite control/monitoring application, as an actual Internet-of-Things space system. Considering the on-growing IoT trending, low power wide area networks (LPWAN) have become a popular low-rate long-range radio communication technology. Namely, Sigfox, LoRa and NB-IoT are the three leading LWPAN technologies for large-scale IoT deployment. In case of the target application, NB-IoT offers benefits in terms of latency and quality of service. In order to reduce the amount of consumed energy, NB-IoT end devices are in sleep mode most of the time outside operation. NB-IoT can be implemented through an LTE carrier, and can be ported to 5G in near future since 3GPP has agreed that the technology will continue evolving as part of the 5G specifications.",
+            "char_count": 1133
+        },
+        {
+            "chunk_id": "CHUNK_43",
+            "page_number": 14,
+            "text": "At the moment there is a TC/TM board based on LoRa developed at SpaceLab under testing, and Master students working with NP-IoT and also LoRa in order to have sufficient background to port the algorithms to FPGA and C to embed them in the proposed SAToC. 3. Methodology The complex aspects involved in a research project in the field of computer architecture for space applications, will demand not only specialised and well-trained people, but also special equipment and installations. The author of this proposal is the head of the Space Technology Research Laboratory (SpaceLab) at UFSC, and also a permanent member in the Graduate Program in Electrical Engineering (PPGEEL), and in the Graduate Program in Electronic Systems Engineering (PPGESE), both at UFSC. A full satellite mission (FloripaSat-1) has been developed in the SpaceLab facilities, and several subsystems have been designed as a result of PPGEEL and PPGESE theses. At the moment, there are five on-going satellite missions at SpaceLab, simultaneously, which demonstrates our organisation and capability to develop this sort of work.",
+            "char_count": 1102
+        },
+        {
+            "chunk_id": "CHUNK_44",
+            "page_number": 14,
+            "text": "The Space Systems Research Laboratory (SpaceLab) has facilities to support the research and development of space systems, including the ground segment (satellite tracking and control stations) and the space segment (satellite software, hardware and electro-mechanical systems). The basic infrastructure includes: computers; software (PCB design and simulation; orbit simulation; CAD); development kits (FPGAs, microprocessors, software defined radio - SDR, …); power",
+            "char_count": 466
+        },
+        {
+            "chunk_id": "CHUNK_45",
+            "page_number": 15,
+            "text": "18 supply; waveform generators; test equipments (oscilloscopes, logic analyzers); SMD soldering station; 3D printer; home-made test equipments specific for satellite modules tests (Sun simulator; Environment Test Chamber), among others. In addition to basic infrastructure, the laboratory also concentrates the knowledge necessary for the development and operation of a complete space mission. In this proposal, two lines of research with different characteristics are described. In the research and development of a radiation-hardened FPGA device, the objective is not to develop the FPGA itself, but to create at SpaceLab an environment to support other groups in Brazil working on similar initiatives. The research at UFSC is focused on the development of basic libraries to be used in EDA tools for the generation of radiation-hardened technology. On the other hand, the work related to the research and development of components to create a SAToC can be entirely developed in SpaceLab, since there is already a well-established culture in the laboratory after about two decades of work in the area.",
+            "char_count": 1103
+        },
+        {
+            "chunk_id": "CHUNK_46",
+            "page_number": 15,
+            "text": "Furthermore, considering the proposed SAToC, it will be ready for a qualification flight on-board a satellite, after the full system integration, and when: all HDL descriptions have been through the validation strategies; the reliability improvement techniques are in place; the OBC subsystems software is properly ported to the new MPSoC processor cores; the operating system is scheduling the parallel system tasks according to the mission requirements; and all system requirements (i.e. reliability, real-time operation, processing power, energy consumption efficiency) have been met. From the methodology point of view, a feature shared by both research topics is that the strict requirements found in space applications, make the design methodology heavily based on reliability improvement, through verification and validation procedures. Another methodological aspect is that the work is conducted with the help of Undergraduate, Master and PhD students developing their research in topics related to this proposal. There are strong links also with other laboratories in Brazil and abroad, with a quite dynamic exchange of researchers and students.",
+            "char_count": 1154
+        },
+        {
+            "chunk_id": "CHUNK_47",
+            "page_number": 15,
+            "text": "The methodology aspects considered at SpaceLab missions can be organised in three main groups. At the component level, the major concern is the “Reliability improvement”. At the system level, the methodology is heavily based on “Verification and validation”. Finally, at the System Engineering level, the “Project management” discipline is in place in all missions. These methodology aspects are discussed next. 3.1. Reliability improvement The research activities in the group target strategies for performance improvement, with low increase in power consumption, and reliability enhancement. There are also strategies to validate the designs, which are highly dependent on the target technology. All works described in this section have been developed under my supervision. For instance, a strategy for fault injection acceleration in HDL designs has been developed in a recent PhD Thesis [FER16]. A previous version of the strategy had been used in a fault tolerant on-board computer based on the LEON3 processor [SIL12]. The strategy uses safety requisites, described in standards such as the automotive ISO 26262, and the aerospace DO-254.",
+            "char_count": 1144
+        },
+        {
+            "chunk_id": "CHUNK_48",
+            "page_number": 15,
+            "text": "The standards provide guidance to ensure that the requirements are implemented, and fault injection is highly recommended for the functional verification of safety mechanisms. According to the safety standards, an exhaustive analysis is not required, but evidence of best effort through the diagnostic coverage assessment needs to be provided when performing quantitative evaluation of hardware architectural metrics. The thesis",
+            "char_count": 428
+        },
+        {
+            "chunk_id": "CHUNK_49",
+            "page_number": 16,
+            "text": "19 explored advanced verification solutions in order to build a methodology to accelerate the diagnostic coverage assessment. The fault injection strategy uses a gate-level netlist as input. The output is a reduced list of faults to be used in fault injection campaigns. In any case, when using HDL based implementations targeting FPGAs in critical applications, special attention should be given to system reliability assurance. There are several reliability improvement strategies available in the literature, and the starting point for any strategy is the definition of the fault model to be adopted. In order to define the fault model, it is necessary first to understand the implementation technology available. So far, the delivered systems to the Brazilian Space Program targeted antifuse FPGAs, but SRAM based FPGAs are also a research target, as in both technologies the FPGA's configuration memory is very flexible allowing on-the- fly modifications in on-board functionalities. An important research problem is the SRAM technology's susceptibility to radiation.",
+            "char_count": 1072
+        },
+        {
+            "chunk_id": "CHUNK_50",
+            "page_number": 16,
+            "text": "The main fault model related to SRAM FPGAs is the stuck- at, which is used to model faults resulted from single-event upsets (SEUs), i.e. faults where a bit is kept in the 0 or 1 logic levels. Papers describing past research work in this field conducted in the group have been published [BEZ99][BEZ00][BEZ01][BEZ01a]. Considering this kind of fault model, a fault tolerance technique based on temporal redundancy was proposed in a PhD Thesis [VIL19]. Figure 10 shows the block diagram of the proposed strategy. This work is a result of a cooperation with researchers from the UNSW in Sydney, Australia. In their work, they propose the usage of the technique in a home made processor, implemented in ASIC [LI13][LI13a]. A new version of the technique has been developed in the PhD research, targeting the RISC-V processor, configured in the MPSoC architecture discussed in Section 2.2. Some important features of the implemented strategy include: ● There are no modifications in the compiler. ● All the modifications are performed in the VHDL implementation of the RISC-V processor, mainly in the pipeline implementation.",
+            "char_count": 1120
+        },
+        {
+            "chunk_id": "CHUNK_51",
+            "page_number": 16,
+            "text": "Even after the modifications, the new RISC-V is still fully compatible with the original ISA. ● The Checkpoint/Recovery module proposed in [VIL19] has been added for on-line monitoring of the programs' parallel execution, to save the process states, and to restore a faulty process to the last known saved state. ● The major challenge so far has been to perform a recovery during the message exchange between processes running in different cores. The implemented solution performs the recovery in all the processes involved in the communication. New strategies are under investigation. In space applications, radiation effects may eventually result in permanent faults in SRAM FPGAs. Also, these devices suffer from ageing, which results in a natural physical degradation process. The ageing speed depends on several factors such as the technology maturity, manufacturing quality control, temperature and thermal shock, operating voltage, dimensions, and even design complexity.",
+            "char_count": 978
+        },
+        {
+            "chunk_id": "CHUNK_52",
+            "page_number": 16,
+            "text": "As the FPGA resources density keeps increasing and with the recent Fin Field-Effect-Transistor (FinFET) technology generation, reliability concerns, mainly due to the Negative Bias Temperature Instability (NBTI), become a relevant factor [ZHA14]. Faults created by NBTI do not radically damage the FPGA resources, but they increase their response time. A design flow has been developed in a past PhD Thesis in the group, and it is applied to FPGA designs using hardcore or softcore processors [MAR15]. The results show that the proposed",
+            "char_count": 536
+        },
+        {
+            "chunk_id": "CHUNK_53",
+            "page_number": 17,
+            "text": "20 mechanism can detect and tolerate permanent faults (hard errors), with only a slight increase in the amount of memory required by a processor. The research activities employing the BRAVE radiation-hardened FPGA, and also the basic infrastructure to be provided at UFSC to build a Brazilian endured FPGA, will take in account all problems identified in previous research works. 3.2. Verification and validation In order to avoid unnecessary redesign efforts, testing and verification strategies used in previous projects will be adopted since the conception of the new architecture. Concomitantly with the SAToC components development, all VHDL implementations will be performed according to the DO-254 recommendations. After enough iterations, this research outcome will be a validation strategy, at the HDL abstraction level, for VHDL based designs. A challenging research topic is the definition of strategies and procedures for the verification and validation of modules described at the Hardware Description Language (HDL) abstraction level [SIL13] [DAB15] [YOR95] [KHA13] [DEL03] [LIT12], targeting the qualification of On-Board Computer (OBC) subsystems under development in HDL.",
+            "char_count": 1188
+        },
+        {
+            "chunk_id": "CHUNK_54",
+            "page_number": 17,
+            "text": "There are already well defined procedures for qualifying software based subsystems, and the on-going research at UFSC, aims at the qualification of HDL based components, more exactly, a SAToC implemented in an FPGA. In order to avoid unnecessary redesign efforts, testing and verification strategies used in previous projects will be adopted since the conception of the new architecture. In a previous SpaceLab PhD Thesis, the Universal Verification Methodology (UVM) was used since the very beginning of the project in order to ensure the developed system correctness. The use of UVM in the Thesis had as a goal to organise the project, improve the development time, increase the system correctness, and to provide metrics for the comparison of different algorithms. The target system had a software part developed in C++, and a hardware part described in VHDL, targeting an FPGA implementation. An important contribution of the Thesis was that the same test benches could be applied to both early conceptual software-only implementations, and later optimised software-hardware hybrid systems, in a hardware-in-the-loop configuration.",
+            "char_count": 1135
+        },
+        {
+            "chunk_id": "CHUNK_55",
+            "page_number": 17,
+            "text": "The simulator was also used to inject specific noise, in order to evaluate the system under some real- world conditions. This methodology, with some improvements and adaptations, is now adopted in the on-going satellite missions in the group. Another validation technique already employed in several works in the group is the \"hardware-in-the-loop\" (HIL). There are on-going works employing HIL validation in actual hardware implementations of the CCSDS communications module. There is a port of the CCSDS for the Zynq device, validated using a Python/Simulink implementation, and another port for the BRAVE FPGA, validated using the Cortex equipment. 3.3. Project management For the project's management it is adopted the same methodology successfully used in previous projects, which is heavily based on the preparation of project documentation. Verification and validation activities should be performed throughout the project's lifetime, and a proper documentation procedure must be adopted. In previous projects in the space field, the adopted",
+            "char_count": 1048
+        },
+        {
+            "chunk_id": "CHUNK_56",
+            "page_number": 18,
+            "text": "21 methodologies were heavily based on the preparation of project documentation, and the following phases were considered: feasibility; preliminary definition; detailed definition; qualification and production; operation / utilisation; and disposal. In each phase data packages are produced, including not only source code and schematics, but also test procedures, setups, and all the documentation. There are several \"review of design\" meetings, where the data packages are delivered by the responsible group. The following review of design meetings are expected to be included in a design targeting a space application, but not all of them are needed in cubesat missions: MDR - Mission Definition Review; PRR - Preliminary Requirements Review; SRR - System Requirements Review; PDR - Preliminary Design Review; CDR - Critical Design Review; QR - Qualification Review; AR - Acceptance Review; ORR - Operational Readiness Review; and FRR - Flight Readiness Review.",
+            "char_count": 964
+        },
+        {
+            "chunk_id": "CHUNK_57",
+            "page_number": 18,
+            "text": "Considering the risk matrix shown in Figure 11, the following main risks have been identified: ● Human resources availability (mainly PhD candidates) o Severity: 3 o Probability: 2 o Magnitude: 6 - Low risk o Mitigation: There are 5 on-going PhD theses on topics related to this proposal, and there are 5 Master students that are encouraged to develop their work in partnership with the PhD researchers. ● Infrastructure availability (design tools and test equipment) o Severity: 4 o Probability: 1 o Magnitude: 4 - Low risk o Mitigation: SpaceLab has the appropriate infrastructure for the proposal, and there are also other research laboratories at UFSC and in the partner universities (in Brazil and abroad) able to provide any extra support. ● Research grant availability o Severity: 4 o Probability: 2 o Magnitude: 8 - Medium risk o Mitigation: In the past three years SpaceLab received funding from the Brazilian Space Agency and from the European Space Agency to develop several satellites. Even though the funding for the next two years is already secured, we are always looking for new funding opportunities in Brazil and abroad.",
+            "char_count": 1138
+        },
+        {
+            "chunk_id": "CHUNK_58",
+            "page_number": 18,
+            "text": "S e v e r i t y 5 5 10 15 20 25 High risk (15-25) [Red] Medium risk (8-12) [Yellow] Low risk (1-6) [Green] 4 4 8 12 16 20 3 3 6 9 12 15 2 2 4 6 8 10 1 1 2 3 4 5 1 2 3 4 5 Probability Figure 4. The risk matrix",
+            "char_count": 208
+        },
+        {
+            "chunk_id": "CHUNK_59",
+            "page_number": 19,
+            "text": "22 4. Expected results The proposed research has two main topics: the definition of an ecosystem at SpaceLab/UFSC to support other groups in the development of a radiation-hardened FPGA device; and the research and development of components to be used in the conception of a SAToC. Both topics share the idea of having several modules with well defined interfaces, and that could be easily connected to each other in order to allow a designer to build the most appropriate system (rad-hard FPGA or SAToC), according to the application requirements. Both are quite complex designs, and EDA tools are used for the respective system generation. At the moment, the rad-hard FPGA is in a conception phase, and the expected results in the next few years would be to establish a network of partners in the VLSI design chain, interested in supporting this sort of project. The group's expertise will be used to guide the partners in the development of the libraries, and also to develop the components itself. It is expected that with this new initiative in place at SpaceLab, Master and PhD students will be attracted to develop their research in this field.",
+            "char_count": 1151
+        },
+        {
+            "chunk_id": "CHUNK_60",
+            "page_number": 19,
+            "text": "On the other hand, as shown in Figure 5, the SAToC is a research topic well established in the group, with several components already developed in recent years, and ready to fly in a satellite mission. It is important to have in mind that the components shown in Figure 5 may be all in the same SAToC only as a proof-of-concept. In an actual mission, just the needed ones will be used to build the SAToC, according to the requirements. The basic components shown in the block diagram in Figure 5 are of special interest for this proposal. There are on-going Master and PhD theses in subjects related to those components, which are briefly described next: ● Processor cores - There are several processors in use in the research group at UFSC. The LEON3 processor has been conceived by Gaisler targeting space applications, and it has been investigated and used in a couple of Master and PhD works at UFSC, mainly in the context of reliability enhancement. In recent years, the group started to migrate to RISC-V, performing studies targeting possible modifications in the processor’s architecture, aiming for energy consumption efficiency.",
+            "char_count": 1138
+        },
+        {
+            "chunk_id": "CHUNK_61",
+            "page_number": 19,
+            "text": "These modifications cannot result in any changes in the ISA, as the idea is to keep the architecture fully compatible with the RISC-V compilers. The REON processor is a RISC-V and LEON3 based implementation, and it is an interesting architecture to be investigated also. The ARM processor is available in the Zynq device, used in some of the on-going modules, and it is available also in the NG-Large and NG-Ultra FPGAs from NanoXplore, which are the rad-hard FPGAs in use in the GOMX-5 mission. ● Operating System - The target space application requires a real-time operating system. Currently, the on-going research projects at SpaceLab/UFSC target RTEMS (LEON3 implementations) and FreeRTOS (RISC-V and MSP430 implementations). RTEMS is used in the INPE related projects, in order to control the tasks execution, assuring that they meet the proposed deadlines, according to the OBC requirements. INPE's original mono-processed ADCS software has been developed targeting the ERC32 (SPARC) processor running on RTEMS. Thus, in the same way that the ERC32 software was ported to the LEON3 architecture, the operating system must be ported as well.",
+            "char_count": 1147
+        },
+        {
+            "chunk_id": "CHUNK_62",
+            "page_number": 19,
+            "text": "Furthermore, real-time operating systems are used in other target processors already discussed.",
+            "char_count": 95
+        },
+        {
+            "chunk_id": "CHUNK_63",
+            "page_number": 20,
+            "text": "23 Figure 5. A complete satellite-on-a-chip with ADCS, EPS, TT&C, OBDH, payload processing, and interconnection infrastructure, with technology options for the components implementation ● Interconnection infrastructure - The chosen interconnection mechanism will depend on the MPSoC framework to be adopted in a mission. It can be a bus, which will result in scalability constraints, or a Network-on-Chip. For instance, OpenScale, a framework developed at LIRMM, France, uses the HERMES NoC infrastructure for the MPSoC generation. Another feature of the proposed strategy shown in Figure 5, is that the several processor cores can be connected through any type of communication mechanism. In a PhD Thesis concluded under my supervision, with the title: \"Interconnection Architecture for Dependable Multi-core Systems\", a strategy was development to increase the reliability and availability of a NoC [MEL19][BAR13][VEI10][ZEF03]. The final goal is to provide a framework to generate fault tolerant NoCs, with low performance impact and energy efficient, to be used in the proposed architecture.",
+            "char_count": 1095
+        },
+        {
+            "chunk_id": "CHUNK_64",
+            "page_number": 20,
+            "text": "A framework developed at LIRMM is also a good option for this MPSoC/NoC design [BUS11], and the PhD researcher spent the whole year of 2018 at LIRMM where he developed a new approach for implementing a more reliable routing device. ● Microprocessors peripherals - MPSoC frameworks generate complete processing elements, including the microprocessor and its peripherals. For instance, OpenScale main component is the Network Processing Unit (NPU), which has the SecretBlaze CPU, embedded RAM, interrupt controller, timer, UART, network interface, the HERMES NoC router, and a Wishbone bus. Peripherals developed in the past few years",
+            "char_count": 632
+        },
+        {
+            "chunk_id": "CHUNK_65",
+            "page_number": 21,
+            "text": "24 at SpaceLab include: UART; Spacewire adapter; SPI; Flash memory controller; among others. ● MPI API - When using OpenScale framework, the software can be developed using MPI for better access to the distributed memory structure, allowing each core to run its tasks asynchronously, with message passing communication, with no global shared- memory. The research and development of a hardware based MPI component was the subject of another PhD Thesis at UFSC under my supervision finished in 2021: “MPI hardware framework for many-core based embedded systems” [PER21]. ● OBDH/OBC modules (software and hardware) - Several OBC modules have already been developed at UFSC as, for instance, the CCSDS protocol for the TC/TM communication system, the Energy Power System, the Star Tracker, the On-Board Data Handling, among other sensors and actuators. Some of these modules, including their software and hardware components, have already been ported to the proposed architecture, where the tasks to be executed by the processor cores, through parallel or distributed execution, have been validated. Other tasks will depend on ADCS/OBC subsystems to be completed.",
+            "char_count": 1160
+        },
+        {
+            "chunk_id": "CHUNK_66",
+            "page_number": 21,
+            "text": "● ADCS (software and hardware) - This is a research field that has not been well explored in the research group. However, there has been very good work in the Star Tracker topic, including a Master and a PhD Thesis [MAR20a]. In the Master, the target was to have a system with smaller memory and processing power usage during the attitude determination processing, targeting CubeSats. The developed system identifies star centroids directly from the star pixel data stream of the CSI-2 bus, commonly employed in image sensors of Star Trackers. The CSI-2 bus is connected to an FPGA that filters the star pixels and transmits them to a processor, which computes the centroids of the respective image using a Kalman Filter. The former PhD student is now a researcher at Kyutech, in Japan, and this collaboration opened several research opportunities in the field. ● Communication - The block diagram in Figure 5 shows several communication options, including a telecommand and telemetry (TT&C) for the service platform, and a high data rate telemetry module (DVB-S2) to be used in payloads.",
+            "char_count": 1088
+        },
+        {
+            "chunk_id": "CHUNK_67",
+            "page_number": 21,
+            "text": "As stated before, the idea is not to have all the blocks used at once on the same chip/satellite, but to have components designed with suitable interfaces to allow their connection to the remaining satellite's components. Examples of communication modules that could be implemented, include: o VHDL component to implement CCSDS over DVB-S2, for high bandwidth image telemetry o Software and hardware components for a SDR implementation (processor, DSP filters, interface). o Software and hardware components for implementing machine-type communication (mMTC), targeting massive deployments in 5G IoT applications. ● The Electrical Power System (EPS) - The EPS initiative is an important on-going activity in the group, with solid scientific contributions [KES20] [MAR21a] [RIG21a] [SLO16a] [SLO18]. Several EPS prototypes, engineering models, and a flight model have been designed and developed for the FloripaSat-1 mission, and have been adapted",
+            "char_count": 946
+        },
+        {
+            "chunk_id": "CHUNK_68",
+            "page_number": 22,
+            "text": "25 to on-going missions. It is one of the modules developed at SpaceLab with flight heritage, as a result of the FloripaSat-1 successful mission. An innovative task scheduling algorithm based on energy harvesting maximisation policy was developed in two PhD Theses [MAR21a][SLO16a][SLO18]. The energy harvesting circuit is mathematically modelled and a scheduling algorithm is designed to keep solar panels working close to their maximum power point by triggering tasks in the appropriate form. Tasks execution affects battery voltage, which is coupled to the solar panels through a protection circuit. A software based Perturb and Observe strategy allows defining the tasks to be triggered. A test apparatus was used to emulate solar irradiance variation, considering the satellite movement around the Earth. Tests have been conducted to show that the scheduling algorithm improves the CubeSat energy harvesting capability by up to 8.46% in a single orbit cycle, in comparison with the CubeSat operating without the scheduling algorithm. The solar panels and batteries behaviours, with and without the scheduling algorithm are shown in Figure 6.",
+            "char_count": 1146
+        },
+        {
+            "chunk_id": "CHUNK_69",
+            "page_number": 22,
+            "text": "● Reconfigurable devices (FPGAs) - The main goal is to have the whole architecture (satellite modules) implemented as a single chip, and also to allow system reconfiguration. The target device is an FPGA, and the requirements of a space mission represent an important challenge. An SRAM based FPGA, for instance, is susceptible to radiation effects, and this is one of the restrictions for its use in this type of application. Another important issue is the amount of static power consumed by the SRAM technology, when considering its large die area usage. An important on-going work in the group targets the radiation-hardened FPGAs from Nanoxplore, which is a French company producing ITAR free devices. A payload based on this FPGA has been developed for the FloripaSat missions, in cooperation with ESA/ESTEC (The Netherlands), and Nanoxplore, who provided an FPGA kit, the software licence, and FPGA devices for radiation campaigns and for the satellite's flight model. Figure 6. Experimental results of the EPS working with and without the proposed scheduling algorithm.",
+            "char_count": 1076
+        },
+        {
+            "chunk_id": "CHUNK_70",
+            "page_number": 23,
+            "text": "41 7. Final remarks, relevance and impact of the project In this proposal, two lines of research with different characteristics are described. Initially, in Section 2.1, the work in the area of development of a radiation-tolerant FPGA device was described. As discussed earlier, the objective is not to develop the FPGA device, but to create at UFSC, and in the laboratory, the necessary culture to support other groups in Brazil working on similar initiatives. It is a project of great complexity, which needs a network of partner institutions to reach the final objective. It is a long-term research topic at UFSC, focused on the development of basic libraries to be used in EDA tools for the generation of radiation-tolerant technology. The development at UFSC is performed by graduate students, in the context of their theses, and supervisioned by myself and colleagues from different microelectronics areas. The design of a rad- hard FPGA is a good integrative project to bring different groups and researchers together, as well as the design houses.",
+            "char_count": 1055
+        },
+        {
+            "chunk_id": "CHUNK_71",
+            "page_number": 23,
+            "text": "The other line of research introduced in this proposal targets the research and development of components to create a Satellite-on-a-chip (SAToC), and it can be entirely developed in SpaceLab, since there is already a well-established culture in the laboratory after about two decades of work in the area. All this acquired knowledge is shared with partners, and also transferred to the industry. This sharing also results in the absorption of new technologies provided by the laboratory partners, as well as the receipt of funds for the development of new activities. Even with the full understanding of the technology necessary for the development of the SAToC, as part of the methodology, partners from UFSC and other institutions work in a collaborative way in research and development activities, as described in the text of the proposal. A full satellite mission (FloripaSat-1) has been developed in the SpaceLab facilities, and several subsystems have been designed as a result of PPGEEL and PPGESE theses. At the moment, there are five on-going satellite missions at SpaceLab, simultaneously, which demonstrates our organisation and capability to develop this sort of work.",
+            "char_count": 1181
+        },
+        {
+            "chunk_id": "CHUNK_72",
+            "page_number": 23,
+            "text": "The first small satellite mission was SERPENS-I, led by UnB, and SpaceLab was a member of the consortium of universities that supported the mission. After that, we developed the FloripaSat-1 (https://floripasat.ufsc.br/) mission, launched in December 2019, and we are working now in the GOLDS-UFSC (2U cubesat), Catarina-1a (2U cubesat), Catarina-1B (2U cubesat), GOMX-5 (one of the payloads for this 12U cubesat), and Aldebaran-I (1U cubesat from UFMA, which uses the boards hardware/software from FloripaSat-1). There are other missions in Brazil and abroad using our FloripaSat mission software and hardware, as it is one of the few satellite missions in the world, with flight heritage, available as open source (https://github.com/floripasat and https://github.com/spacelab-ufsc/). The expertise in the development of the satellites’ modules has been used in the design of the SAToC components. The satellite missions are excellent platforms not only to verify the correct functionality of the components, but also to perform an “actual system flight proven through successful mission operations”, as defined by NASA’s Technology Readiness Level definition.",
+            "char_count": 1162
+        },
+        {
+            "chunk_id": "CHUNK_73",
+            "page_number": 23,
+            "text": "All FloripaSat-1 hardware and software components are TRL 9, and this flight heritage is used directly in the porting to the SAToC components. The experience acquired in the design of the radiation tolerance strategies is used also to understand the needs of the proposed radiation-hardened FPGA design.",
+            "char_count": 303
+        },
+        {
+            "chunk_id": "CHUNK_74",
+            "page_number": 24,
+            "text": "42 As mentioned before, Brazil used to be one of the few countries in the world using and producing space technology. In recent years, with the scale of new technologies, and the low cost access to space, there is a continuous increase in the amount of players in this field. As a result, the research and development of some key subsystems is crucial for the country to keep competitive in this field. For instance, few countries master the technology to develop attitude control systems for aerospace applications. This is one of the components to be developed for the proposed SAToC, allowing new research initiatives and original contributions in this field. The conception of a satellite-on-a-chip as a whole is, by itself, an important innovation resulting in several technological advances. The research works to be conducted by PPGEEL students under my supervision at SpaceLab, in order to come up with the embedded satellite modules described in this proposal, will represent important scientific contributions, allowing positioning the research in the state-of-the-art.",
+            "char_count": 1079
+        },
+        {
+            "chunk_id": "CHUNK_75",
+            "page_number": 24,
+            "text": "Considering the previous experience obtained in works in the field developed at UFRGS, PUCRS, Oxford (UK), Sussex (UK), INPE, UFSC, UNSW (Australia), LIRMM (France), and the ESA/ESTEC (The Netherlands), it is straightforward that the innovative architectures and methodologies conceived during the research must be qualified in actual satellite flights. This is not only the best way to prove a space technology, but also the expected research outcome from the industry perspective. A novel satellite-on-a-chip based on a multi-processed architecture will not be employed in a future satellite, while it is not fully qualified. An effective way to qualify this architecture is a low cost (launching and maintainability) satellite as, for instance, the Cubesat standard. At SpaceLab, there are on-going theses related to on-board computer architectures of satellites, and also Cubesats. There are also works, at the Master and undergraduate levels. An interesting work investigates the setup of a space-Earth network of ground stations and satellites.",
+            "char_count": 1050
+        },
+        {
+            "chunk_id": "CHUNK_76",
+            "page_number": 24,
+            "text": "A constellation of Cubesats may have dozens of satellites connected in an ad hoc topology, and they may be connected to ground stations around the globe, which are considered also as nodes of the network. Cubesat constellations represent an important motivation for the research in the fields described in this text, and also in the related technologies, including, but not limited to: soft- processors; multi-core systems; unconventional arithmetic; interconnection infra-structures; image processing; sensors & actuators; ground segment; reliability improvement; verification & validation; radiation effects; PCB design; TT&C; ADCS; EPS; OBDH; GNSS; DVB-S2; RTOS; 5G; SDR; and SDN. The proposed work may profit from several on-going research and development agreements between Europe and Brazil. For instance, recently Thales-Alenia has produced and delivered a geostationary satellite under a Brazilian contract, with the condition of performing technology transfer activities from Europe to Brazil.",
+            "char_count": 1002
+        },
+        {
+            "chunk_id": "CHUNK_77",
+            "page_number": 24,
+            "text": "This could result in further international collaboration in the aerospace field, targeting not only the development, integration and testing of small satellites, but also teaching and consulting activities. GOLDS-UFSC and Catarina Constellation satellites are good options for, at least, a first flight of the proposed SAToC. A PC104 style Cubesat FPGA PCB has been designed in the previous period of the PQ scholarship, in order to embed some of the already developed SAToC modules. For the new proposal, a simplified version of an attitude determination control system (ADCS) can receive positioning (movement) information from MEMs sensors (gyroscopes, accelerometers, and magnetometer), and activate the actuators (magnetic torquer rods and reaction wheels). A prototype for this module is under development in a partnership between UFSC and UEL. This FPGA board can be part of a Catarina Constellation satellite, which would, for instance,",
+            "char_count": 944
+        },
+        {
+            "chunk_id": "CHUNK_78",
+            "page_number": 25,
+            "text": "43 change the satellite's pointing direction from time to time, in order not only to qualify the proposed SAToC, but also to perform some useful manoeuvre during the flight. The stricter energy requirements of a Cubesat [SLO16a][FRO14] represent a great challenge to stress the limits of the proposed SAToC software and hardware functionalities. The SpaceLab satellite may have the first MPSoC system in orbit around the Earth, implementing the satellite's ADCS functionalities. The ADCS and the CCSDS module described in this proposal are on-board systems of major interest for the Brazilian space program. INPE has been working for several years on their multi-mission platform, and our CCSDS module has been originally developed for INPE's satellites. This proposal represents a great opportunity to update the components architectures, improving their processing speed, and increasing their reliability figures. A Cubesat mission of a SAToC with these components, will provide flight heritage for these modules, proving not only the concepts, but certifying the technology for use in a standard (larger size) Brazilian satellite.",
+            "char_count": 1133
+        },
+        {
+            "chunk_id": "CHUNK_79",
+            "page_number": 25,
+            "text": "Another main contribution would be the integration of a software-defined radio (SDR) allowing the mission to have 5G communication capabilities. As discussed before, the new 5G standard has a specific service for IoT applications, and a SAToC implementing this sort of communication platform will be a valuable tool for the next generation of always connected devices. Other microelectronics initiatives by the author of this proposal include a RISC-V processor that has been used in the editions of the hardware description language course at PPGEEL/UFSC (CAPES 6) since 2019 (https://gse.ufsc.br/bezerra/?page_id=2682). Basically, the students are asked to implement architectures based on the RISC-V description, and they perform the synthesis targeting FPGA technology. In collaboration with other microelectronics colleagues from UFSC, an approach similar to the rad-hard FPGA one described in this proposal is adopted in order to develop, manufacture, and encapsulate a chip with RISC-V, aimed at producing RISC-V based development kits for teaching activities in undergraduate and graduate courses, such as microprocessors, and embedded systems programming.",
+            "char_count": 1164
+        },
+        {
+            "chunk_id": "CHUNK_80",
+            "page_number": 25,
+            "text": "Other architectures have been used in the past as, for instance, the zr16s08 microcontroller from Santa Maria Design House ((https://gse.ufsc.br/bezerra/?page_id=2212)). The students receive just the device’s datasheet, and they describe its functionality in a HDL targeting an FPGA family. They demonstrate the working version on an FPGA board available in the teaching laboratory. It was an interesting approach as the course usually has students employed by the electronics industry (e.g. Intelbras, Khomp, Digitro) and they found the microcontroller from SMDH a good alternative to be used in the companies products, mainly because of the government tax incentives. For the near future, there are research proposals under preparation to be submitted to European/Brazilian joint calls. It is a high value-added field, and there are several funding opportunities available for researchers and companies. The research proposal will result in an advanced architecture to be used in future space missions, and it may also produce several spin-off research and product possibilities.",
+            "char_count": 1081
+        },
+        {
+            "chunk_id": "CHUNK_81",
+            "page_number": 25,
+            "text": "The multidisciplinary nature of the proposal is an inspiration for unfolding new proposals in the medium and long terms. In addition, the project could profit from new technologies, and could be useful also in other application fields as, for instance, autonomous robots guidance, self-driving cars, among others. This is a multidisciplinary research topic, which would be of interest to several laboratories at UFSC, but mainly to the ones with research units in the SpaceLab network. SpaceLab is under",
+            "char_count": 503
+        },
+        {
+            "chunk_id": "CHUNK_82",
+            "page_number": 26,
+            "text": "44 the Technological Centre (CTC) structure, and it has research units in laboratories belonging to the Electrical Engineering, Mechanical Engineering, and Control and Automation Engineering departments. This network is expanding to other CTC departments, as Computer Science and Physics. There is also a strong cooperation with the Aerospace Engineering course at UFSC Campus Joinville. This proposal also receives scientific contribution, and represents a continuous collaboration with researchers from LIRMM/CSU (France), UNSW (Australia), Morehead (USA), Kyutech (Japan), Nottingham (UK), and ESTEC (The Netherlands). References [AGRA08] N. Agrawal and K. Venugopalan, \"Back propagation neural network approach for SAR raw data compression,\" MILCOM 2008 - 2008 IEEE Military Communications Conference, 2008, pp. 1- 4, doi: 10.1109/MILCOM.2008.4753106. [ALM07] Almeida, G.M.; Bezerra, E.A.; Cargnini, L.V.; Fagundes, R.D.R.; Mesquita, D.G. \"A Reed- Solomon algorithm for FPGA area optimization in space applications\", 2nd IEEE NASA/ESA Conference on Adaptive Hardware and Systems, AHS'2007, Edinburgh, 2007. v. 1. p. 243-249. [BAR06] D. J. Barnhart, T. Vladimirova, M.",
+            "char_count": 1171
+        },
+        {
+            "chunk_id": "CHUNK_83",
+            "page_number": 26,
+            "text": "Sweeting, \"Satellite-On-A-Chip Feasibility for Distributed Space Missions\", Proc. of CANEUS'2006, Aug. 2006, Toulouse. [BAR13] Baron, S. et. al. \"Security mechanisms to improve the availability of a Network-on-Chip\", 20th IEEE International Conference on Electronics, Circuits, and Systems (ICECS), 2013, pp. 609- 612. [BEN16] Benfica, J.; et. al. \"Analysis of SRAM-Based FPGA SEU Sensitivity to Combined EMI and TID-Imprinted Effects\". IEEE Transactions on Nuclear Science, v. 63, p. 1294-1300, 2016. [BEZ99] Bezerra, E.A.; Vargas, Ozcerit, F.A. and Gough, M.P., \"Improving the dependability of embedded systems using configurable computing technology,\" XIV International Symposium on Computer and Information Sciences, Izmir, Turkey 1999, pp. 49-56. [BEZ00] Bezerra, E.A.; Vargas, F. and Gough, M.P. \"Merging BIST and Configurable Computing Technology to Improve Availability in Space Applications\" IEEE Latin American Test Workshop (LATW'00), Rio de Janeiro, Brazil, Mar. 2000, pp. 146-151. [BEZ00a] Bezerra, Eduardo Augusto; Gough, Michael Paul. \"A guide to migrating from microprocessor to FPGA coping with the support tool limitations\". Microprocessors and Microsystems, The Netherlands, v.",
+            "char_count": 1196
+        },
+        {
+            "chunk_id": "CHUNK_84",
+            "page_number": 26,
+            "text": "23, n.10, p. 561-572, 2000. [BEZ01] Bezerra, E.A.; Vargas, F. and Gough, M.P. \"Improving reconfigurable systems reliability by combining periodical test and redundancy techniques: a case study\" Journal of Electronic Testing: Theory And Applications - JETTA, Kluwer Academic Publishers, vol. 17 (2), April, pp. 163-174, 2001. [BEZ01a] Bezerra, E.A.; Vargas, F. and Gough, M.P. \"Sig-FPGA: a signature analysis based strategy for on-line testing/recovering of reconfigurable systems\" DATE'2001 - Design, Automation and Test in Europe. [BEZ10] Bezerra, E.A.; Almeida, G.M.; Azevedo, L. Ferreira, C. \"An adaptive communications module for on-board computers of satellites\", 5th IEEE NASA/ESA Conference on Adaptive Hardware and Systems, AHS'2010. v. 1. p. 317-324. [BEZ21] Bezerra, E. A.; et.al. “Advanced Payload Processors In-orbit Demonstration for the GOMX-5 Mission”. In: 15th ESA Workshop on Avionics, Data, Control and Software Systems ~ ADCSS2021, 2021, Noordwijk. 15th ESA Workshop on Avionics, Data, Control and Software Systems ~ ADCSS2021. Netherlands: European Space Agency, 2021. v. 1. p. 1-1. [BUS11] Busseuil, R., et al.",
+            "char_count": 1131
+        },
+        {
+            "chunk_id": "CHUNK_85",
+            "page_number": 26,
+            "text": "\"Open-scale: a scalable, open-source NoC-based MPSoC for design space exploration\", Int. Conf. on Reconf. Computing and FPGAs, ReConFig'2011, Cancum, 2011.",
+            "char_count": 155
+        },
+        {
+            "chunk_id": "CHUNK_86",
+            "page_number": 27,
+            "text": "45 [BUT15] Butko, A.; et al. \"Design Exploration for next Generation High-Performance Manycore On-chip Systems: Application to big.LITTLE Architectures\", 2015 IEEE Computer Society Annual Symposium on VLSI (ISVLSI), 2015, Montpellier, p. 551-556. [CAR07] Cargnini, L.V.; Fagundes, R.D.R.; Bezerra, E.A.; Almeida, G.M. \"Parallel Algebraic Approach of BCH coding in VHDL\", IEEE ICCGI'2007, Guadeloupe, French Caribbean. v. 1. p. 1-5. [DAB15] Dabic, R.; et al. \"Direct Test Methodology for HDL Verification\", 18th IEEE International Symp. on Design and Diagnostics of Electronic Circuits & Systems (DDECS), 2015, pp. 115- 118. [DEL03] S. Dellacherie; L. Burgaud; P. di Crescenzo \"Improve HDL DO-254 formal property checker used for design and verification of avionics protocol controllers\", The 22nd Digital Avionics Systems Conference, 2003. DASC '03. [FER12] Ferlini, F.; Silva, F.A.; Bezerra, E.A.; Lettnin, D. \"Non-intrusive fault tolerance in soft processors through circuit duplication\", 13th IEEE Latin American Test Workshop LATW, Quito, 2012, p.1-6. [FER16] Ferlini, F. \"Methodology to accelerate diagnostic coverage assessment: MADCA\", UFSC, Brazil, 2016. [FER20] Ferlini, F.; et. al.",
+            "char_count": 1191
+        },
+        {
+            "chunk_id": "CHUNK_87",
+            "page_number": 27,
+            "text": "“Enabling ISO 26262 Compliance with Accelerated Diagnostic Coverage Assessment”. ELECTRONICS, v. 9, p. 1-17, 2020. [FRO14] Fröhlich, A.A.; Bezerra, E.A; Slongo, L.K. \"Experimental analysis of solar energy harvesting circuits efficiency for low power applications\", Computers & Electrical Engineering, v. 1, p. 1-8, 2014. [GOE18] Goerl, Roger; et. al. \"An efficient EDAC approach for handling multiple bit upsets in memory array\". Microelectronics Reliability, v. 88-90, p. 214-218, 2018. [GOM19] Gomspace \"GOMX-5 mission\", available on https://gomspace.com/news/payload-collaboration- initiated-for-the-gomx-.aspx [GOU03] Gough, M. P.; Buckley, A. M.; Bezerra, E. A.; Popoola, B.; Seferiadis, G. \"Intelligent Instruments for the Space Plasma Environment\". In: G. Zhou; O. Baysal; M. Kafatos; R. Yang. (Org.). Real Time Information Technology for Future Intelligent Earth Observing Satellites. PA: Hierophant Publishing / Science, 2003. [GRI15] Grimm, Tomas; Bezerra, Eduardo Augusto; Silva, Danilo. \"Hardware Implementation of Two Key Equation Solvers for Reed-Solomon Decoding\". Revista IEEE América Latina, v. 13, p. 3550-3555, 2015.",
+            "char_count": 1135
+        },
+        {
+            "chunk_id": "CHUNK_88",
+            "page_number": 27,
+            "text": "[HAN15] Hang, L.; Zhen, G.; Ming, Z.; Jing, W., \" Partial iterative decode of turbo codes for on-board processing satellite platform\", China Communications, V.: 12, Issue: 11, Nov. 2015, p. 1-8. [JOS94] J. Keller interview of A. Joshi, “Startup to Develop Satellite-On-A-Chip,” Military & Aerospace Electronics, February 1994 [Online]. Available: http://www.chipsat.com/press/press01.php [KES20] Kessler, S.; et. al. “Nanosatellite electrical power system architectures: Models, simulations, and tests”. INTERNATIONAL JOURNAL OF CIRCUIT THEORY AND APPLICATIONS, v. 1, p. cta.2872, 2020. [KHA13] V. Kharchenko; B. Konorev; V. Sklyar; L. Reva \"Invariant-oriented verification of HDL-based safety critical systems\", Design & Test Symposium, 2013 East-West, pp. 1-4. [LI13] T. Li, M. Shafique, S. Rehman, S. Radhakrishnan, R. Ragel, J. A. Ambrose, J. Henkel, and S. Parameswaran, “CSER: HW/SW configurable soft-error resiliency for application specific instruction-set processors” in Proc of the Conf on Design, Automation and Test in Europe, DATE'13, pp. 707–712. [LI13a] T. Li, M. Shafique, S. Rehman, J. A. Ambrose, J. Henkel, and S.",
+            "char_count": 1132
+        },
+        {
+            "chunk_id": "CHUNK_89",
+            "page_number": 27,
+            "text": "Parameswaran, “DHASER: dynamic heterogeneous adaptation for soft-error resiliency in ASIP-based multi-core systems,” in ICCAD ’13 Proceedings of the International Conference on Computer-Aided Design, 2013, pp. 646–653.",
+            "char_count": 218
+        },
+        {
+            "chunk_id": "CHUNK_90",
+            "page_number": 28,
+            "text": "46 [LIM14] Lim, S.; Xiaofang, C. \"High performance on-board processing and storage for satellite remote sensing applications\", IEEE International Conference on Aerospace Electronics and Remote Sensing Technology (ICARES), 2014. [LIT12] Litvinova, E. \"Verification system for SoC HDL-code\" International Conference on Modern Problems of Radio Engineering Telecommunications and Computer Science (TCSET), 2012. [MAR15] Martins, V.M.G.; Villa, P.R.C.; Horacio Neto, C.C.; Bezerra, E.A. \"A TMR Strategy with Enhanced Dependability Features Based on a Partial Reconfiguration Flow\", 2015 IEEE Computer Society Annual Symposium on VLSI (ISVLSI), 2015, Montpellier, p. 161-166. [MAR18] Martins, Victor; et. al. \"A dynamic partial reconfiguration design flow for permanent faults mitigation in FPGAs\". Microelectronics Reliability, v. 83, p. 50-63, 2018. [MAR20] Marcelino, G. M.; et. al. “A Critical Embedded System Challenge: The FloripaSat-1 Mission”. IEEE Latin America Transactions, v. 18, p. 249-256, 2020. [MAR20a] Marcelino, G. M.; et. al. “Centroid determination hardware algorithm for star trackers”. International Journal of Sensor Networks, v. 32, p. 1, 2020. [MAR20b] Marcelino, G. M.; et. al.",
+            "char_count": 1198
+        },
+        {
+            "chunk_id": "CHUNK_91",
+            "page_number": 28,
+            "text": "“Qualification and validation test methodology of the open-source CubeSat FloripaSat-I”. Journal of Systems Engineering and Electronics, v. 31, p. 1238-1252, 2020. [MAR21] Marcelino, G. M.; et. al. “In-orbit preliminary results from the open-source educational nanosatellite FloripaSat-I”. ACTA ASTRONAUTICA, v. 188, p. 64-80, 2021. [MAR21a] Martinez, S. V.; et. al.. “An Integrated Thermal-Electrical Model for Simulations of Battery Behavior in CubeSats”. Applied Sciences-Basel, v. 11, p. 1-25, 2021. [MAT15] Matthew Fritz, et. al., \"Attitude determination and control system design for the CYGNSS microsatellite\", 2015 IEEE Aerospace Conference, 7-14 March 2015, Big Sky, MT, USA. [MEL19] Melo, D. R.; et. al. “Maximizing the Inner Resilience of a Network-on-Chip through Router Controllers Design. SENSORS, v. 19, p. 5416, 2019. [OBE15] Ober, G.; et al. \"A rad-hard many-core computing platform for on-board quick hyperspectral image processing and interpretation\", IEEE International Geoscience and Remote Sensing Symposium (IGARSS), 2015. [OLI16] Oliveira,G.; Cappelletti, C.",
+            "char_count": 1082
+        },
+        {
+            "chunk_id": "CHUNK_92",
+            "page_number": 28,
+            "text": "\"First Serpens Mission\", The International Academy of Astronautics Latin American Cubesat Workshop, IAA-LACW'2016, pp. 37. [PER21] Pereira, R. V. M.; et. al. “MPI hardware framework for many-core based embedded systems. International Journal of Sensor Networks”, v. 35, p. 42-57, 2021. [PIN10] Pingree, P.J. \"Advancing NASA's on-board processing capabilities with reconfigurable FPGA technologies: Opportunities & implications\", IEEE International Symposium on Parallel & Distributed Processing, Workshops and Phd Forum (IPDPSW), 2010. [RIG20] Rigo, C. A.; et. al. “Printed Circuit Board Design Methodology for Embedded Systems Targeting Space Applications”. IEEE Latin America Transactions, v. 18, p. 257-264, 2020. [RIG21] Rigo, C. A.; et. al. “A nanosatellite task scheduling framework to improve mission value using fuzzy constraints”. EXPERT SYSTEMS WITH APPLICATIONS, v. 175, p. 114784, 2021. [RIG21a] Rigo, C. A.; et.al. “Task scheduling for optimal power management and quality-of-service assurance in CubeSats”. ACTA ASTRONAUTICA, v. 179, p. 550-560, 2021. [RIG22] Rigo, C. A.; et. al. “A branch-and-price algorithm for nanosatellite task scheduling to improve mission quality-of-service”.",
+            "char_count": 1198
+        },
+        {
+            "chunk_id": "CHUNK_93",
+            "page_number": 28,
+            "text": "EUROPEAN JOURNAL OF OPERATIONAL RESEARCH, v. 1, p. 1-24, 2022. [SCH21] Schulz, V. H.; et. al. “Universal Verification Platform and Star Simulator for Fast Star Tracker Design”. SENSORS, v. 21, p. 907-930, 2021. [SAL20] Salamanca, J. J. L.; et. al. “Finite-State Markov Chains Channel Model for CubeSats Communication Uplink”. IEEE TRANSACTIONS ON AEROSPACE AND ELECTRONIC SYSTEMS, v. 56, p. 142-154, 2020.",
+            "char_count": 405
+        },
+        {
+            "chunk_id": "CHUNK_94",
+            "page_number": 29,
+            "text": "47 [SAL22] Salamanca, J. J. L.; et. al. “Multi-sector discrete-time channel model for data link layer evaluation of CubeSat communications”. EXPERT SYSTEMS WITH APPLICATIONS, v. 203, p. 117375, 2022. [SAN21] Santos, G. H; et. al. “Static Attitude Determination Using Convolutional Neural Networks”. SENSORS, v. 21, p. 6419, 2021. [SIL12] Silva, F. A.; Ferlini, F.; Bezerra, E.A.; Lettnin, D. V. \"Non-intrusive fault tolerance in soft processors through circuit duplication\", 13th IEEE Latin American Test Workshop, LATW'2012, Quito, pp. 1-6. [SIL13] Silva, W.; Bezerra, E.A.; Winterholer, M.; Lettnin, D. \"Automatic property generation for formal verification applied to HDL-based design of an on-board computer for space applications\", 14th Latin American Test Workshop LATW'2013, Cordoba. 2013, p. 1-6. [TUL16] Tullberg, H.; et.al. \"The METIS 5G System Concept: Meeting the 5G Requirements\", IEEE Communications Magazine, Dec. 2016, p. 132-139. [SLO16] Slongo, L.; et al. \"The Floripa-Sat experience: mission progress and satellite’s development\", The International Academy of Astronautics Latin American Cubesat Workshop, IAA- LACW'2016, p. 48-69. [SLO16a] Slongo, L.K.; Bezerra, E.A.",
+            "char_count": 1187
+        },
+        {
+            "chunk_id": "CHUNK_95",
+            "page_number": 29,
+            "text": "\"Nanosatellite energy harvesting maximization through an energy aware scheduling algorithm\", The International Academy of Astronautics Latin American Cubesat Workshop, IAA-LACW'2016, pp. 480-492. [SLO18] Slongo, L.K. ; Martínez, S.V. ; Eiterer, B.V.B. ; Pereira, T.G. ; Bezerra, E.A. ; Paiva, K.V. \"Energy-driven scheduling algorithm for nanosatellite energy harvesting maximization\". ACTA Astronautica, v. 1, p. 100-115, 2018. [SLO19] Slongo, Leonardo; et. al. \"Pre-flight qualification test procedure for nanosatellites using sounding rockets\". ACTA Astronautica, v. 1, p. 82-101, 2019. [TRA18] Travessini, R.; et.al. “Processor Core Profiling for SEU Effect Analysis”. In: 19th IEEE Latin- American Test Symposium (LATS18), 2018, Sao Paulo. 19th IEEE Latin-American Test Symposium (LATS18). New York: IEEE, 2018. v. 1. p. 1-6. [TSO17] Tsoeunyane, L.; Winberg, S.; Inggs, M. \"Software-Defined Radio FPGA Cores: Building towards a Domain-Specific Language\", International Journal of Reconfigurable Computing, v. 2017, Article ID 3925961, 28pp. [VEI10] Veiga, F.; Zeferino, C.A.",
+            "char_count": 1078
+        },
+        {
+            "chunk_id": "CHUNK_96",
+            "page_number": 29,
+            "text": "\"Implementation of Techniques for Fault Tolerance in a Network-on- Chip\", 11th Symposium on Computing Systems (WSCAD-SCC), 2010, pp. 80-87. [VIL18] Villa, P. R. C.; et.al. “Processor Checkpoint Recovery for Transient Faults in Critical Applications”. In: 19th IEEE Latin-American Test Symposium (LATS18), 2018, Sao Paulo. 19th IEEE Latin-American Test Symposium (LATS18). New York: IEEE, 2018. v. 1. p. 1-6. [VIL19] Villa, Paulo R. C.; Travessini, Rodrigo; Goerl, Roger C. ; Vargas, Fabian L.; Bezerra, Eduardo A. \"Fault Tolerant Soft-Core Processor Architecture Based on Temporal Redundancy\". Journal of Electronic Testing-Theory and Applications, v. 1, p. 1-19, 2019. [VLA07] Vladimirova, T.; Wu, X. \"A Reconfigurable System-on-Chip Architecture for Pico-Satellite Missions\", Communicating Process Architectures 2007, Alistair McEwan, Steve Schneider, Wilson Ifill and Peter Welch (Eds.), IOS Press, 2007, pp. 493-0502. [WAL11] Walters, K; et al. \"Multicore SoC for on-board payload signal processing\", NASA/ESA Conference on Adaptive Hardware and Systems (AHS), 2011. [YOR95] G. York; R. Mueller-Thuns; J. Patel; D.",
+            "char_count": 1118
+        },
+        {
+            "chunk_id": "CHUNK_97",
+            "page_number": 29,
+            "text": "Beatty \"An integrated environment for HDL verification\", Proceedings IEEE International Verilog HDL Conference, 1995. pp. 9-18. [ZEF03] Zeferino, C.A.; Susin, A.A. \"SoCIN: a parametric and scalable network-on-chip\", Proceedings 16th IEEE Symposium on Integrated Circuits and Systems Design, SBCCI'2003, pp. 169-174. [ZHA14] Zhang, Y. et al. \"Mitigating NBTI degradation on FinFET GPUs through exploiting device heterogeneity\", Proc. of the IEEE Computer Society Annual Symposium on VLSI (ISVLSI'2014), pp. 577–582, Tampa, FL, Jul. 2014.",
+            "char_count": 536
+        }
+    ]
+}

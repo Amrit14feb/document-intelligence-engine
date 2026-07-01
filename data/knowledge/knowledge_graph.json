@@ -1,0 +1,125 @@
+{
+    "entities": {
+        "organizations": [
+            "UFSC",
+            "UFRGS",
+            "University of Sussex",
+            "SpaceLab",
+            "Brazilian Space Agency",
+            "CNPq",
+            "INPE",
+            "European Space Agency"
+        ],
+        "people": [
+            "Eduardo Augusto Bezerra"
+        ],
+        "technologies": [
+            "Satellite-on-a-Chip",
+            "COTS",
+            "FPGA",
+            "VHDL"
+        ],
+        "locations": [
+            "Florianópolis, SC",
+            "Brazil",
+            "England",
+            "Latin America"
+        ]
+    },
+    "relationships": [
+        {
+            "source": "Eduardo Augusto Bezerra",
+            "relationship": "coordinates",
+            "target": "research group"
+        },
+        {
+            "source": "Eduardo Augusto Bezerra",
+            "relationship": "started",
+            "target": "research activities at UFRGS"
+        },
+        {
+            "source": "Eduardo Augusto Bezerra",
+            "relationship": "completed",
+            "target": "PhD at Space Science Centre"
+        },
+        {
+            "source": "SpaceLab",
+            "relationship": "designed and developed",
+            "target": "FloripaSat-1"
+        },
+        {
+            "source": "FloripaSat-1",
+            "relationship": "launched",
+            "target": "December 2019"
+        },
+        {
+            "source": "SpaceLab",
+            "relationship": "aims to concentrate",
+            "target": "satellite functionalities on a single chip"
+        },
+        {
+            "source": "European Space Agency",
+            "relationship": "funded",
+            "target": "mission for radiation hardened devices"
+        },
+        {
+            "source": "Brazilian Space Agency",
+            "relationship": "provided support",
+            "target": "research activities"
+        },
+        {
+            "source": "CNPq",
+            "relationship": "provided support",
+            "target": "research activities"
+        },
+        {
+            "source": "INPE",
+            "relationship": "supervised",
+            "target": "research activities"
+        },
+        {
+            "source": "UFSC",
+            "relationship": "collaborates with",
+            "target": "partner institutions"
+        },
+        {
+            "source": "UFSC",
+            "relationship": "conducts research in",
+            "target": "embedded systems for on-board processing"
+        },
+        {
+            "source": "SpaceLab",
+            "relationship": "conducts research in",
+            "target": "designing satellite on a chip"
+        },
+        {
+            "source": "UFSC",
+            "relationship": "targets",
+            "target": "aerospace applications"
+        },
+        {
+            "source": "UFSC",
+            "relationship": "aims to generate",
+            "target": "intellectual property cores"
+        }
+    ],
+    "concepts": {
+        "core_concepts": [
+            "Satellite-on-a-Chip",
+            "Radiation-hardened FPGA",
+            "Embedded Systems",
+            "On-board Processing",
+            "Reliability Improvement",
+            "Energy Efficiency",
+            "Microelectronics",
+            "Space Missions",
+            "Multiprocessor System-on-Chip",
+            "Hardware/Software Co-design",
+            "Data Handling",
+            "Telecommand and Telemetry",
+            "Fault Injection",
+            "Reconfigurable Systems",
+            "Technological Independence"
+        ]
+    }
+}

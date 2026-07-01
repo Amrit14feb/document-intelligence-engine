@@ -3,10 +3,16 @@ from app.reasoning.context_builder import build_context
 from app.reasoning.llm import llm
 
 
+REPORT_QUERY = (
+    "document overview architecture technologies methodology "
+    "contributions results future work"
+)
+
+
 def generate_technical_report():
 
     results = search_chunks(
-        "document overview architecture technologies methodology contributions results future work",
+        REPORT_QUERY,
         n_results=25
     )
 
@@ -47,3 +53,16 @@ DOCUMENT:
     response = llm.invoke(prompt)
 
     return response.content
+
+
+def generate_technical_report_with_evidence():
+    """Generate the technical report and append citations + confidence.
+
+    Additive companion to :func:`generate_technical_report`; reuses the same
+    retrieval query so the evidence reflects the report's own context.
+    """
+
+    from app.intelligence.evidence import attach_evidence
+
+    report = generate_technical_report()
+    return attach_evidence(report, REPORT_QUERY)

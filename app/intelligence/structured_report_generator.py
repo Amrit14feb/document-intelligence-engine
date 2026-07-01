@@ -5,10 +5,15 @@ from app.reasoning.llm import llm
 import json
 
 
+STRUCTURED_REPORT_QUERY = (
+    "document overview architecture technologies methodology contributions"
+)
+
+
 def generate_structured_report():
 
     results = search_chunks(
-        "document overview architecture technologies methodology contributions",
+        STRUCTURED_REPORT_QUERY,
         n_results=20
     )
 
@@ -88,3 +93,25 @@ DOCUMENT:
     return json.loads(
         response.content
     )
+
+
+def generate_structured_report_with_evidence():
+    """Generate the structured report and add a grounding section.
+
+    Additive companion to :func:`generate_structured_report`. Appends a
+    "Sources & Confidence" section (citations + confidence) so the JSON report
+    stays traceable to the document, without changing the base schema.
+    """
+
+    from app.intelligence.evidence import gather_evidence
+
+    report = generate_structured_report()
+    evidence = gather_evidence(STRUCTURED_REPORT_QUERY)
+
+    report.setdefault("sections", []).append(
+        {
+            "heading": "Sources & Confidence",
+            "content": evidence.appendix(),
+        }
+    )
+    return report
